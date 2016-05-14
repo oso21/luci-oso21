@@ -25,6 +25,7 @@ function Graph.__init__( self, timespan, opts )
 	-- options
 	opts.timespan  = timespan       or sections.rrdtool.default_timespan or 900
 	opts.rrasingle = opts.rrasingle or ( sections.collectd_rrdtool.RRASingle == "1" )
+	opts.rramax    = opts.rramax    or ( sections.collectd_rrdtool.RRAMax == "1" )
 	opts.host      = opts.host      or sections.collectd.Hostname        or luci.sys.hostname()
 	opts.width     = opts.width     or sections.rrdtool.image_width      or 400
 	opts.rrdpath   = opts.rrdpath   or sections.collectd_rrdtool.DataDir or "/tmp/rrd"
@@ -171,16 +172,29 @@ function Graph._generic( self, opts, plugin, plugin_instance, dtype, index )
 
 		-- is first source in stack or overlay source: source_stk = source_nnl
 		if not prev or source.overlay then
+		     if self.opts.rrasingle or not self.opts.rramax then
 			-- create cdef statement for cumulative stack (no NaNs) and also
                         -- for display (preserving NaN where no points should be displayed)
 			_tif( _args, "CDEF:%s_stk=%s_nnl", source.sname, source.sname )
 			_tif( _args, "CDEF:%s_plot=%s_avg", source.sname, source.sname )
+		     else
+			-- create cdef statement for cumulative stack (no NaNs) and also
+                        -- for display (preserving NaN where no points should be displayed)
+			_tif( _args, "CDEF:%s_stk=%s_nnl", source.sname, source.sname )
+			_tif( _args, "CDEF:%s_plot=%s_max", source.sname, source.sname )
+		     end
 
 		-- is subsequent source without overlay: source_stk = source_nnl + previous_stk
 		else
+		     if self.opts.rrasingle or not self.opts.rramax then
 			-- create cdef statement
 			_tif( _args, "CDEF:%s_stk=%s_nnl,%s_stk,+", source.sname, source.sname, prev )
 			_tif( _args, "CDEF:%s_plot=%s_avg,%s_stk,+", source.sname, source.sname, prev )
+		     else
+			-- create cdef statement
+			_tif( _args, "CDEF:%s_stk=%s_nnl,%s_stk,+", source.sname, source.sname, prev )
+			_tif( _args, "CDEF:%s_plot=%s_max,%s_stk,+", source.sname, source.sname, prev )
+		     end
 		end
 
 		-- create multiply by minus one cdef if flip is enabled
