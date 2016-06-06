@@ -59,6 +59,10 @@ o5.datatype = "directory"
 e = m:section(NamedSection, "global", "adblock", translate("Extra options"),
 	translate("Options for further tweaking in case the defaults are not suitable for you."))
 
+a0 = e:option(Flag, "adb_restricted", translate("Do not write status info to flash"),
+	translate("Skip writing update status information to the config file. Status fields on this page will not be updated."))
+a0.default = 0
+
 a1 = e:option(Value, "adb_nullport", translate("Port of the adblock uhttpd instance"))
 a1.optional = true
 a1.default = 65535
@@ -73,6 +77,11 @@ a3 = e:option(Value, "adb_nullipv6", translate("IPv6 blackhole ip address"))
 a3.optional = true
 a3.default = "::ffff:c000:0201"
 a3.datatype = "ip6addr"
+
+a4 = e:option(Value, "adb_fetchttl", translate("Timeout for blocklist fetch (seconds)"))
+a4.optional = true
+a4.default = 5
+a4.datatype = "range(2,60)"
 
 a7 = e:option(Value, "adb_lanif", translate("Name of the logical lan interface"))
 a7.optional = true
