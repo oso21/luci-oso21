@@ -1,15 +1,4 @@
 
-config servers 'tunnel_org_cn'
-	option host 'tunnel.org.cn'
+config servers 'ngrok_cc'
+	option host 'server.ngrok.cc'
 	option port '4443'
-
-config servers 'phiui_com'
-	option host 'phiui.com'
-	option port '4443'
-
-config tunnel 'tunnel1'
-	option enabled '0'
-	option server 'tunnel_org_cn'
-	option type 'http'
-	option lport '80'
-	option dname 'openwrt'
