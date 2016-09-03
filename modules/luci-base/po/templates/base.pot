@@ -1,6 +1,9 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
+msgid "%s is untagged in multiple VLANs!"
+msgstr ""
+
 msgid "(%d minute window, %d second interval)"
 msgstr ""
 
@@ -504,9 +507,6 @@ msgstr ""
 msgid "CA certificate; if empty it will be saved after the first connection."
 msgstr ""
 
-msgid "CPU"
-msgstr ""
-
 msgid "CPU usage (%)"
 msgstr ""
 
@@ -1003,6 +1003,9 @@ msgid "External system log server"
 msgstr ""
 
 msgid "External system log server port"
+msgstr ""
+
+msgid "External system log server protocol"
 msgstr ""
 
 msgid "Extra SSH command options"
@@ -1689,6 +1692,9 @@ msgstr ""
 msgid "MB/s"
 msgstr ""
 
+msgid "MD5"
+msgstr ""
+
 msgid "MHz"
 msgstr ""
 
@@ -2180,12 +2186,6 @@ msgstr ""
 msgid "Port"
 msgstr ""
 
-msgid "Port %d"
-msgstr ""
-
-msgid "Port %d is untagged in multiple VLANs!"
-msgstr ""
-
 msgid "Port status:"
 msgstr ""
 
@@ -2463,6 +2463,9 @@ msgstr ""
 msgid "Run filesystem check"
 msgstr ""
 
+msgid "SHA256"
+msgstr ""
+
 msgid ""
 "SIXXS supports TIC only, for static tunnels using IP protocol 41 (RFC4213) "
 "use 6in4 instead"
@@ -2601,6 +2604,9 @@ msgstr ""
 msgid "Software"
 msgstr ""
 
+msgid "Software VLAN"
+msgstr ""
+
 msgid "Some fields are invalid, cannot save values!"
 msgstr ""
 
@@ -2711,6 +2717,13 @@ msgid "Switch %q"
 msgstr ""
 
 msgid "Switch %q (%s)"
+msgstr ""
+
+msgid ""
+"Switch %q has an unknown topology - the VLAN settings might not be accurate."
+msgstr ""
+
+msgid "Switch VLAN"
 msgstr ""
 
 msgid "Switch protocol"
@@ -3157,9 +3170,6 @@ msgstr ""
 msgid "VDSL"
 msgstr ""
 
-msgid "VLAN Interface"
-msgstr ""
-
 msgid "VLANs on %q"
 msgstr ""
 
@@ -3287,6 +3297,9 @@ msgid "Wireless shut down"
 msgstr ""
 
 msgid "Write received DNS requests to syslog"
+msgstr ""
+
+msgid "Write system log to file"
 msgstr ""
 
 msgid "XR Support"
