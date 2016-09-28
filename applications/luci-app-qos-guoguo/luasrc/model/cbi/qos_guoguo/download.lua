@@ -5,8 +5,10 @@ Based on luci-app-qos-gargoyle.
 
 local wa = require "luci.tools.webadmin"
 local fs = require "nixio.fs"
+local sys = require "luci.sys"
 
 m = Map("qos_guoguo", translate("Download Settings"))
+
 
 s = m:section(TypedSection, "download_class", translate("Service Classes"), 
 		translate("Each service class is specified by four parameters: percent bandwidth at capacity, realtime bandwidth and maximum bandwidth and the minimimze round trip time flag.") .. "<br />" ..
@@ -83,5 +85,26 @@ max_pkt_size.datatype = "and(uinteger,min(1))"
 connbytes_kb = s:option(Value, "connbytes_kb", translate("Connection bytes reach"))
 connbytes_kb.datatype = "and(uinteger,min(0))"
 
+if (tonumber(sys.exec("lsmod | cut -d ' ' -f 1 | grep -c 'xt_ndpi'"))) > 0 then
+	ndpi = s:option(Value, "ndpi", translate("DPI protocol"))
+	local pats = io.popen("iptables -m ndpi --help | grep -e '^--'")
+	if pats then
+		local l,s,e,_,prt_v,prt_d
+		while true do
+			l = pats:read("*l")
+			if not l then break end
+			s,e = l:find("%-%-[^%s]+")
+			if s and e then
+				prt_v=l:sub(s+2,e)
+			end
+			s,e = l:find("for [^%s]+ protocol")
+				if s and e then
+				prt_d=l:sub(s+3,e-9)
+			end
+			ndpi:value(prt_v,prt_d)
+			end
+			pats:close()
+	end
+end
 return m
 
