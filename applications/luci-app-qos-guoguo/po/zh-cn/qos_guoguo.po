@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-qos-guoguo\n"
-"POT-Creation-Date: 2016-03-20 11:50+0800\n"
-"PO-Revision-Date: 2016-03-20 11:51+0800\n"
+"POT-Creation-Date: 2016-09-29 22:27+0800\n"
+"PO-Revision-Date: 2016-09-29 22:27+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-KeywordsList: translate;_\n"
@@ -26,21 +26,21 @@ msgstr "全局设置"
 
 #: luasrc/controller/qos_guoguo.lua:25
 #: luasrc/model/cbi/qos_guoguo/general.lua:42
-#: luasrc/model/cbi/qos_guoguo/upload.lua:8
+#: luasrc/model/cbi/qos_guoguo/upload.lua:10
 msgid "Upload Settings"
 msgstr "上传设置"
 
 #: luasrc/controller/qos_guoguo.lua:29
-#: luasrc/model/cbi/qos_guoguo/download.lua:9
+#: luasrc/model/cbi/qos_guoguo/download.lua:10
 #: luasrc/model/cbi/qos_guoguo/general.lua:63
 msgid "Download Settings"
 msgstr "下载设置"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:11
+#: luasrc/model/cbi/qos_guoguo/download.lua:13
 msgid "Service Classes"
 msgstr "服务类型"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:12
+#: luasrc/model/cbi/qos_guoguo/download.lua:14
 msgid ""
 "Each service class is specified by four parameters: percent bandwidth at "
 "capacity, realtime bandwidth and maximum bandwidth and the minimimze round "
@@ -49,7 +49,7 @@ msgstr ""
 "每个下载服务类型由四个参数指定：带宽占用百分比、最小保证带宽、最大带宽和最小"
 "往返延时标志。"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:13
+#: luasrc/model/cbi/qos_guoguo/download.lua:15
 msgid ""
 "<em>Percent bandwidth at capacity</em> is the percentage of the total "
 "available bandwidth that should be allocated to this class when all "
@@ -65,7 +65,7 @@ msgstr ""
 "100。该设置只在WAN端链路饱和时才生效。<em>（PS：WAN端链路饱和即出口带宽被占用"
 "完）</em>"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:14
+#: luasrc/model/cbi/qos_guoguo/download.lua:16
 msgid ""
 "<em>Minimum bandwidth</em> specifies the minimum service this class will be "
 "allocated when the link is at capacity. Classes which specify minimum "
@@ -85,8 +85,8 @@ msgstr ""
 "配剩余带宽到其它服务类型前，QoS将优先满足所有服务类型的最小带宽要求，所以要谨"
 "慎地使用最小带宽。"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:15
-#: luasrc/model/cbi/qos_guoguo/upload.lua:14
+#: luasrc/model/cbi/qos_guoguo/download.lua:17
+#: luasrc/model/cbi/qos_guoguo/upload.lua:16
 msgid ""
 "<em>Maximum bandwidth</em> specifies an absolute maximum amount of bandwidth "
 "this class will be allocated in kbit/s. Even if unused bandwidth is "
@@ -96,7 +96,7 @@ msgstr ""
 "<em>最大带宽：</em>指定该服务类型可被分配的带宽最大值（以kbit/s为单位）。即使"
 "存在未使用带宽，该服务类型也将永远不被允许使用超过此量的带宽。"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:16
+#: luasrc/model/cbi/qos_guoguo/download.lua:18
 msgid ""
 "<em>Minimize RTT</em> indicates to the active congestion controller that you "
 "wish to minimize round trip times (RTT) when this class is active. Use this "
@@ -110,38 +110,38 @@ msgstr ""
 "减小往返延时（RTT）会带来WAN有效吞吐量的额外花销，所以当这些服务类型启用时你"
 "的WAN吞吐量将下降（通常在20%左右）。"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:22
-#: luasrc/model/cbi/qos_guoguo/upload.lua:20
+#: luasrc/model/cbi/qos_guoguo/download.lua:24
+#: luasrc/model/cbi/qos_guoguo/upload.lua:22
 msgid "Class Name"
 msgstr "服务类型名称"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:24
-#: luasrc/model/cbi/qos_guoguo/upload.lua:22
+#: luasrc/model/cbi/qos_guoguo/download.lua:26
+#: luasrc/model/cbi/qos_guoguo/upload.lua:24
 msgid "Percent bandwidth at capacity"
 msgstr "带宽占用百分比"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:26
-#: luasrc/model/cbi/qos_guoguo/upload.lua:24
+#: luasrc/model/cbi/qos_guoguo/download.lua:28
+#: luasrc/model/cbi/qos_guoguo/upload.lua:26
 msgid "Minimum bandwidth"
 msgstr "最小带宽"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:29
-#: luasrc/model/cbi/qos_guoguo/upload.lua:27
+#: luasrc/model/cbi/qos_guoguo/download.lua:31
+#: luasrc/model/cbi/qos_guoguo/upload.lua:29
 msgid "Maximum bandwidth"
 msgstr "最大带宽"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:32
+#: luasrc/model/cbi/qos_guoguo/download.lua:34
 msgid "Minimize RTT"
 msgstr "最小往返延时"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:37
-#: luasrc/model/cbi/qos_guoguo/upload.lua:10
-#: luasrc/model/cbi/qos_guoguo/upload.lua:30
+#: luasrc/model/cbi/qos_guoguo/download.lua:39
+#: luasrc/model/cbi/qos_guoguo/upload.lua:12
+#: luasrc/model/cbi/qos_guoguo/upload.lua:32
 msgid "Classification Rules"
 msgstr "分类规则"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:38
-#: luasrc/model/cbi/qos_guoguo/upload.lua:31
+#: luasrc/model/cbi/qos_guoguo/download.lua:40
+#: luasrc/model/cbi/qos_guoguo/upload.lua:33
 msgid ""
 "Packets are tested against the rules in the order specified -- rules toward "
 "the top have priority. As soon as a packet matches a rule it is classified, "
@@ -151,50 +151,55 @@ msgstr ""
 "数据包将按规则中指定的顺序进行匹配——靠上的规则优先进行匹配。一旦数据包匹配一"
 "条规则那它将被归类，并且其余的规则将被忽略。使用上下箭头可调整规则的顺序。"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:45
-#: luasrc/model/cbi/qos_guoguo/upload.lua:39
+#: luasrc/model/cbi/qos_guoguo/download.lua:47
+#: luasrc/model/cbi/qos_guoguo/upload.lua:41
 msgid "Service Class"
 msgstr "服务类型"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:58
-#: luasrc/model/cbi/qos_guoguo/upload.lua:51
+#: luasrc/model/cbi/qos_guoguo/download.lua:60
+#: luasrc/model/cbi/qos_guoguo/upload.lua:53
 msgid "Application Protocol"
 msgstr "协议"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:65
-#: luasrc/model/cbi/qos_guoguo/upload.lua:58
+#: luasrc/model/cbi/qos_guoguo/download.lua:67
+#: luasrc/model/cbi/qos_guoguo/upload.lua:60
 msgid "Source IP"
 msgstr "源IP"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:69
-#: luasrc/model/cbi/qos_guoguo/upload.lua:62
+#: luasrc/model/cbi/qos_guoguo/download.lua:71
+#: luasrc/model/cbi/qos_guoguo/upload.lua:64
 msgid "Destination IP"
 msgstr "目的IP"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:73
-#: luasrc/model/cbi/qos_guoguo/upload.lua:66
+#: luasrc/model/cbi/qos_guoguo/download.lua:75
+#: luasrc/model/cbi/qos_guoguo/upload.lua:68
 msgid "Destination Port"
 msgstr "目的端口"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:75
-#: luasrc/model/cbi/qos_guoguo/upload.lua:68
+#: luasrc/model/cbi/qos_guoguo/download.lua:77
+#: luasrc/model/cbi/qos_guoguo/upload.lua:70
 msgid "Source Port"
 msgstr "源端口"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:77
-#: luasrc/model/cbi/qos_guoguo/upload.lua:70
+#: luasrc/model/cbi/qos_guoguo/download.lua:79
+#: luasrc/model/cbi/qos_guoguo/upload.lua:72
 msgid "Minimum Packet Length"
 msgstr "最小数据包长度"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:80
-#: luasrc/model/cbi/qos_guoguo/upload.lua:73
+#: luasrc/model/cbi/qos_guoguo/download.lua:82
+#: luasrc/model/cbi/qos_guoguo/upload.lua:75
 msgid "Maximum Packet Length"
 msgstr "最大数据包长度"
 
-#: luasrc/model/cbi/qos_guoguo/download.lua:83
-#: luasrc/model/cbi/qos_guoguo/upload.lua:76
+#: luasrc/model/cbi/qos_guoguo/download.lua:85
+#: luasrc/model/cbi/qos_guoguo/upload.lua:78
 msgid "Connection bytes reach"
 msgstr "连接流量达到（单位：字节）"
+
+#: luasrc/model/cbi/qos_guoguo/download.lua:89
+#: luasrc/model/cbi/qos_guoguo/upload.lua:82
+msgid "DPI protocol"
+msgstr "DPI协议"
 
 #: luasrc/model/cbi/qos_guoguo/general.lua:11
 msgid "QoS by GuoGuo.Based on the QoS scripts in Gargoyle firmware."
@@ -345,13 +350,13 @@ msgid ""
 "default settings."
 msgstr "如果需要，你可以在这里设置自定义Ping限制。留空则将由ACC自动控制。"
 
-#: luasrc/model/cbi/qos_guoguo/upload.lua:11
+#: luasrc/model/cbi/qos_guoguo/upload.lua:13
 msgid ""
 "Each upload service class is specified by three parameters: percent "
 "bandwidth at capacity, minimum bandwidth and maximum bandwidth."
 msgstr "每个上传服务类型由三个参数指定：带宽占用百分比、最小带宽和最大带宽。"
 
-#: luasrc/model/cbi/qos_guoguo/upload.lua:12
+#: luasrc/model/cbi/qos_guoguo/upload.lua:14
 msgid ""
 "<em>Percent bandwidth</em> is the percentage of the total available "
 "bandwidth that should be allocated to this class when all available "
@@ -365,7 +370,7 @@ msgstr ""
 "于或小于100，但当设置被应用时，百分比值将会被按比例调整以便使它们加起来等于"
 "100。"
 
-#: luasrc/model/cbi/qos_guoguo/upload.lua:13
+#: luasrc/model/cbi/qos_guoguo/upload.lua:15
 msgid ""
 "<em>Minimum bandwidth</em> specifies the minimum service this class will be "
 "allocated when the link is at capacity. For certain applications like VoIP "
