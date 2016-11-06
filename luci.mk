@@ -150,9 +150,16 @@ LUCI_LIBRARYDIR = $(LUA_LIBRARYDIR)/luci
 
 define SrcDiet
 	$(FIND) $(1) -type f -name '*.lua' | while read src; do \
-		if $(STAGING_DIR)/host/bin/lua $(STAGING_DIR)/host/bin/LuaSrcDiet \
-			--noopt-binequiv -o "$$$$src.o" "$$$$src"; \
+		if LuaSrcDiet --noopt-binequiv -o "$$$$src.o" "$$$$src"; \
 		then mv "$$$$src.o" "$$$$src"; fi; \
+	done
+endef
+
+define SubstituteVersion
+	$(FIND) $(1) -type f -name '*.htm' | while read src; do \
+		$(SED) 's/<%# *\([^ ]*\)PKG_VERSION *%>/\1$(PKG_VERSION)/g' \
+		    -e 's/"\(<%= *\(media\|resource\) *%>[^"]*\.\(js\|css\)\)"/"\1?v=$(PKG_VERSION)"/g' \
+			"$$$$src"; \
 	done
 endef
 
@@ -162,6 +169,7 @@ define Package/$(PKG_NAME)/install
 	  cp -pR $(PKG_BUILD_DIR)/luasrc/* $(1)$(LUCI_LIBRARYDIR)/; \
 	  $(FIND) $(1)$(LUCI_LIBRARYDIR)/ -type f -name '*.luadoc' | $(XARGS) rm; \
 	  $(if $(CONFIG_LUCI_SRCDIET),$(call SrcDiet,$(1)$(LUCI_LIBRARYDIR)/),true); \
+	  $(call SubstituteVersion,$(1)$(LUCI_LIBRARYDIR)/); \
 	else true; fi
 	if [ -d $(PKG_BUILD_DIR)/htdocs ]; then \
 	  $(INSTALL_DIR) $(1)$(HTDOCS); \

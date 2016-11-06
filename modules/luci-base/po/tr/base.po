@@ -283,7 +283,7 @@ msgstr ""
 msgid "Always announce default router"
 msgstr ""
 
-msgid "An additional network will be created if you leave this unchecked."
+msgid "An additional network will be created if you leave this checked."
 msgstr ""
 
 msgid "Annex"
@@ -1496,10 +1496,10 @@ msgstr ""
 msgid "Join Network"
 msgstr ""
 
-msgid "Join Network: Settings"
+msgid "Join Network: Wireless Scan"
 msgstr ""
 
-msgid "Join Network: Wireless Scan"
+msgid "Joining Network: %q"
 msgstr ""
 
 msgid "Keep settings"
@@ -2220,7 +2220,7 @@ msgid ""
 "ignore failures"
 msgstr ""
 
-msgid "Prevent listening on thise interfaces."
+msgid "Prevent listening on these interfaces."
 msgstr ""
 
 msgid "Prevents client-to-client communication"

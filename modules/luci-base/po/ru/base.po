@@ -297,8 +297,8 @@ msgstr ""
 msgid "Always announce default router"
 msgstr ""
 
-msgid "An additional network will be created if you leave this unchecked."
-msgstr "Если вы не выберите эту опцию, то будет создана дополнительная сеть."
+msgid "An additional network will be created if you leave this checked."
+msgstr ""
 
 msgid "Annex"
 msgstr ""
@@ -1572,11 +1572,11 @@ msgstr "Требуется Java Script!"
 msgid "Join Network"
 msgstr "Подключение к сети"
 
-msgid "Join Network: Settings"
-msgstr "Подключение к сети: настройки"
-
 msgid "Join Network: Wireless Scan"
 msgstr "Подключение к сети: сканирование"
+
+msgid "Joining Network: %q"
+msgstr ""
 
 msgid "Keep settings"
 msgstr "Сохранить настройки"
@@ -2318,7 +2318,7 @@ msgstr ""
 "Предполагать, что узел недоступен после указанного количества ошибок "
 "получения эхо-пакета LCP, введите 0 для игнорирования ошибок"
 
-msgid "Prevent listening on thise interfaces."
+msgid "Prevent listening on these interfaces."
 msgstr ""
 
 msgid "Prevents client-to-client communication"
@@ -3700,6 +3700,13 @@ msgstr "да"
 
 msgid "« Back"
 msgstr "« Назад"
+
+#~ msgid "An additional network will be created if you leave this unchecked."
+#~ msgstr ""
+#~ "Если вы не выберите эту опцию, то будет создана дополнительная сеть."
+
+#~ msgid "Join Network: Settings"
+#~ msgstr "Подключение к сети: настройки"
 
 #~ msgid "CPU"
 #~ msgstr "ЦП"
