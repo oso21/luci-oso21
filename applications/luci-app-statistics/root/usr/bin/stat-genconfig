@@ -273,6 +273,12 @@ plugins = {
 		{ }
 	},
 
+	cpufreq	= {
+		{ },
+		{ },
+		{ }
+	},
+
 	csv	= {
 		{ "DataDir" },
 		{ "StoreRates" },
@@ -415,6 +421,12 @@ plugins = {
 		{ },
 		{ "ListeningPorts" },
 		{ "LocalPorts", "RemotePorts" }
+	},
+
+	thermal	= {
+		{ },
+		{ "IgnoreSelected" },
+		{ "Device" }
 	},
 
 	unixsock = {
