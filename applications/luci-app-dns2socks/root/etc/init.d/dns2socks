@@ -1,14 +1,11 @@
 #!/bin/sh /etc/rc.common
 # Copyright (C) 2006-2011 OpenWrt.org
-# Copyright (C) 2015 GuoGuo <gch981213@gmail.com>
+# Copyright (C) 2015-2016 GuoGuo <gch981213@gmail.com>
 . /lib/functions.sh
 START=95
+USE_PROCD=1
 
-SERVICE_USE_PID=1
-SERVICE_WRITE_PID=1
-SERVICE_DAEMONIZE=1
-
-start() {
+start_service() {
 	[ -f /etc/config/dns2socks ] || {
 		echo "You are missing configuration file /etc/config/dns2socks"
 		return 1
@@ -28,9 +25,13 @@ start() {
 	config_get DNSSERVER config dnsserver
 	config_get LOCALIP config localip
 	config_get LOCALPORT config localport
-	service_start /usr/bin/dns2socks $SOCKSSERVER:$SOCKSPORT $DNSSERVER $LOCALIP:$LOCALPORT
+
+	procd_open_instance
+	procd_set_param /usr/bin/dns2socks $SOCKSSERVER:$SOCKSPORT $DNSSERVER $LOCALIP:$LOCALPORT
+	procd_set_param respawn
+	procd_close_instance
 }
 
-stop() {
-	service_stop /usr/bin/dns2socks
+reload_service() {
+	restart
 }
