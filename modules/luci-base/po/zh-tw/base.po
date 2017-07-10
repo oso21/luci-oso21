@@ -50,11 +50,35 @@ msgstr "1分鐘負載"
 msgid "15 Minute Load:"
 msgstr "15分鐘負載"
 
+msgid "4-character hexadecimal ID"
+msgstr ""
+
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
 msgstr "5分鐘負載"
+
+msgid "6-octet identifier as a hex string - no colons"
+msgstr ""
+
+msgid "802.11r Fast Transition"
+msgstr ""
+
+msgid "802.11w Association SA Query maximum timeout"
+msgstr ""
+
+msgid "802.11w Association SA Query retry timeout"
+msgstr ""
+
+msgid "802.11w Management Frame Protection"
+msgstr ""
+
+msgid "802.11w maximum timeout"
+msgstr ""
+
+msgid "802.11w retry timeout"
+msgstr ""
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -123,6 +147,11 @@ msgstr "<abbr title=\"maximal\">最大</abbr>並發查詢數"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -140,9 +169,6 @@ msgstr ""
 
 msgid "APN"
 msgstr "APN"
-
-msgid "AR Support"
-msgstr "AR支援"
 
 msgid "ARP retry threshold"
 msgstr "ARP重試門檻"
@@ -381,13 +407,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr "已連接站點"
 
-msgid "Atheros 802.11%s Wireless Controller"
-msgstr "Atheros 802.11%s 無線控制器"
-
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -461,9 +481,6 @@ msgstr "返回至總覽"
 
 msgid "Back to scan results"
 msgstr "返回至掃描結果"
-
-msgid "Background Scan"
-msgstr "背景搜尋"
 
 msgid "Backup / Flash Firmware"
 msgstr "備份/升級韌體"
@@ -626,9 +643,6 @@ msgstr "指令"
 
 msgid "Common Configuration"
 msgstr "一般設定"
-
-msgid "Compression"
-msgstr "壓縮"
 
 msgid "Configuration"
 msgstr "設定"
@@ -848,11 +862,11 @@ msgstr "關閉DNS設置"
 msgid "Disable Encryption"
 msgstr ""
 
-msgid "Disable HW-Beacon timer"
-msgstr "關閉硬體燈號計時器"
-
 msgid "Disabled"
 msgstr "關閉"
+
+msgid "Disabled (default)"
+msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
 msgstr "丟棄上游RFC1918 虛擬IP網路的回應"
@@ -890,9 +904,6 @@ msgstr "對不被公用名稱伺服器回應的請求不轉發"
 
 msgid "Do not forward reverse lookups for local networks"
 msgstr "對本地網域不轉發反解析鎖定"
-
-msgid "Do not send probe responses"
-msgstr "不傳送探測回應"
 
 msgid "Domain required"
 msgstr "網域必要的"
@@ -1020,6 +1031,11 @@ msgstr "啟用/關閉"
 msgid "Enabled"
 msgstr "啟用"
 
+msgid ""
+"Enables fast roaming among access points that belong to the same Mobility "
+"Domain"
+msgstr ""
+
 msgid "Enables the Spanning Tree Protocol on this bridge"
 msgstr "在橋接器上啟用802.1d Spanning Tree協定"
 
@@ -1067,6 +1083,12 @@ msgstr "釋放位址的過期週期,最少兩分鐘 (<code>2m</code>)."
 msgid "External"
 msgstr ""
 
+msgid "External R0 Key Holder List"
+msgstr ""
+
+msgid "External R1 Key Holder List"
+msgstr ""
+
 msgid "External system log server"
 msgstr "外部系統日誌伺服器"
 
@@ -1078,9 +1100,6 @@ msgstr ""
 
 msgid "Extra SSH command options"
 msgstr ""
-
-msgid "Fast Frames"
-msgstr "快速迅框群"
 
 msgid "File"
 msgstr "檔案"
@@ -1116,6 +1135,9 @@ msgstr "完成"
 
 msgid "Firewall"
 msgstr "防火牆"
+
+msgid "Firewall Mark"
+msgstr ""
 
 msgid "Firewall Settings"
 msgstr "防火牆設定"
@@ -1161,6 +1183,9 @@ msgstr "強制TKIP加密"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "強制TKIP+CCMP (AES)加密"
+
+msgid "Force link"
+msgstr ""
 
 msgid "Force use of NAT-T"
 msgstr ""
@@ -1312,6 +1337,9 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
+msgid "IP Addresses"
+msgstr ""
+
 msgid "IP address"
 msgstr "IP位址"
 
@@ -1402,8 +1430,14 @@ msgstr "IPv6字首長度"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "IPv6-位址"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6包覆在IPv4內(RFC4213)"
@@ -1503,6 +1537,9 @@ msgstr "安裝軟體包"
 msgid "Interface"
 msgstr "介面"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "介面設定"
 
@@ -1548,13 +1585,16 @@ msgstr "打入的是不正確的VLAN ID!僅有獨一無二的IDs被允許"
 msgid "Invalid username and/or password! Please try again."
 msgstr "不正確的用戶名稱和/或者密碼!請再試一次."
 
+msgid "Isolate Clients"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
 "flash memory, please verify the image file!"
 msgstr "它顯示你正嘗試更新不適用於這個flash記憶體的映像檔,請檢查確認這個映像檔"
 
-msgid "Java Script required!"
+msgid "JavaScript required!"
 msgstr "需要Java腳本"
 
 msgid "Join Network"
@@ -1623,9 +1663,6 @@ msgstr "租賃有效時間"
 msgid "Leasefile"
 msgstr "租賃檔案"
 
-msgid "Leasetime"
-msgstr "租賃時間"
-
 msgid "Leasetime remaining"
 msgstr "租賃保留時間"
 
@@ -1666,6 +1703,22 @@ msgid ""
 "List of <abbr title=\"Domain Name System\">DNS</abbr> servers to forward "
 "requests to"
 msgstr "列出 <abbr title=\"Domain Name System\">DNS</abbr> 伺服器以便轉發請求"
+
+msgid ""
+"List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
+"Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
+"(NAS Identifier) to a destination MAC address when requesting PMK-R1 key "
+"from the R0KH that the STA used during the Initial Mobility Domain "
+"Association."
+msgstr ""
+
+msgid ""
+"List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
+"as 6 octets with colons,128-bit key as hex string. <br />This list is used "
+"to map R1KH-ID to a destination MAC address when sending PMK-R1 key from the "
+"R0KH. This is also the list of authorized R1KHs in the MD that can request "
+"PMK-R1 keys."
+msgstr ""
 
 msgid "List of SSH key files for auth"
 msgstr ""
@@ -1800,9 +1853,6 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-msgid "Maximum Rate"
-msgstr "最快速度"
-
 msgid "Maximum allowed number of active DHCP leases"
 msgstr "允許啟用DHCP釋放的最大數量"
 
@@ -1838,9 +1888,6 @@ msgstr "記憶體使用 (%)"
 msgid "Metric"
 msgstr "公測單位"
 
-msgid "Minimum Rate"
-msgstr "最低速度"
-
 msgid "Minimum hold time"
 msgstr "可持有的最低時間"
 
@@ -1852,6 +1899,9 @@ msgstr ""
 
 msgid "Missing protocol extension for proto %q"
 msgstr "協定  %q 漏失的延伸協定"
+
+msgid "Mobility Domain"
+msgstr ""
 
 msgid "Mode"
 msgstr "模式"
@@ -1909,9 +1959,6 @@ msgstr "往下移"
 msgid "Move up"
 msgstr "往上移"
 
-msgid "Multicast Rate"
-msgstr "多點群播速度"
-
 msgid "Multicast address"
 msgstr "多點群播位址"
 
@@ -1922,6 +1969,9 @@ msgid "NAT-T Mode"
 msgstr ""
 
 msgid "NAT64 Prefix"
+msgstr ""
+
+msgid "NCM"
 msgstr ""
 
 msgid "NDP-Proxy"
@@ -2102,18 +2152,30 @@ msgstr "選項已變更"
 msgid "Option removed"
 msgstr "選項已移除"
 
+msgid "Optional"
+msgstr ""
+
 msgid "Optional, specify to override default server (tic.sixxs.net)"
 msgstr ""
 
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
+msgid ""
+"Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
+"starting with <code>0x</code>."
 msgstr ""
 
 msgid ""
-"Optional. Adds in an additional layer of symmetric-key cryptography for post-"
-"quantum resistance."
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
+msgstr ""
+
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2149,9 +2211,6 @@ msgstr "出"
 
 msgid "Outbound:"
 msgstr "外連:"
-
-msgid "Outdoor Channels"
-msgstr "室外通道"
 
 msgid "Output Interface"
 msgstr ""
@@ -2199,6 +2258,9 @@ msgstr "PID碼"
 
 msgid "PIN"
 msgstr "PIN碼"
+
+msgid "PMK R1 Push"
+msgstr ""
 
 msgid "PPP"
 msgstr "PPP協定"
@@ -2329,6 +2391,15 @@ msgstr ""
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
+msgid "Prefer LTE"
+msgstr ""
+
+msgid "Prefer UMTS"
+msgstr ""
+
+msgid "Prefix Delegated"
+msgstr ""
+
 msgid "Preshared Key"
 msgstr ""
 
@@ -2393,6 +2464,12 @@ msgstr ""
 
 msgid "Quality"
 msgstr "品質"
+
+msgid "R0 Key Lifetime"
+msgstr ""
+
+msgid "R1 Key Holder"
+msgstr ""
 
 msgid "RFC3947 NAT-T mode"
 msgstr ""
@@ -2484,6 +2561,9 @@ msgstr "即時流量"
 msgid "Realtime Wireless"
 msgstr "即時無線網路"
 
+msgid "Reassociation Deadline"
+msgstr ""
+
 msgid "Rebind protection"
 msgstr "重新綁護"
 
@@ -2502,6 +2582,9 @@ msgstr "接收"
 msgid "Receiver Antenna"
 msgstr "接收天線"
 
+msgid "Recommended. IP addresses of the WireGuard interface."
+msgstr ""
+
 msgid "Reconnect this interface"
 msgstr "重新連接這個介面"
 
@@ -2510,9 +2593,6 @@ msgstr "重連這個介面中"
 
 msgid "References"
 msgstr "引用"
-
-msgid "Regulatory Domain"
-msgstr "監管網域"
 
 msgid "Relay"
 msgstr "延遲"
@@ -2553,10 +2633,16 @@ msgstr ""
 msgid "Require TLS"
 msgstr ""
 
+msgid "Required"
+msgstr ""
+
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr "對特定的ISP需要,例如.DOCSIS 3 加速有線電視寬頻網路"
 
 msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
 msgid ""
@@ -2565,7 +2651,9 @@ msgid ""
 "routes through the tunnel."
 msgstr ""
 
-msgid "Required. Public key of peer."
+msgid ""
+"Requires the 'full' version of wpad/hostapd and support from the wifi driver "
+"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -2705,9 +2793,6 @@ msgstr "傳送LCP呼叫請求在這個給予的秒數間隔內, 僅影響關聯�
 msgid "Separate Clients"
 msgstr "分隔用戶端"
 
-msgid "Separate WDS"
-msgstr "分隔WDS中繼"
-
 msgid "Server Settings"
 msgstr "伺服器設定值"
 
@@ -2730,6 +2815,11 @@ msgstr "服務型態"
 
 msgid "Services"
 msgstr "各服務"
+
+msgid ""
+"Set interface properties regardless of the link carrier (If set, carrier "
+"sense events do not invoke hotplug handlers)."
+msgstr ""
 
 #, fuzzy
 msgid "Set up Time Synchronization"
@@ -2867,9 +2957,6 @@ msgstr "靜態租約"
 
 msgid "Static Routes"
 msgstr "靜態路由"
-
-msgid "Static WDS"
-msgstr "靜態WDS"
 
 msgid "Static address"
 msgstr "靜態位址"
@@ -3266,9 +3353,6 @@ msgstr ""
 msgid "Tunnel type"
 msgstr ""
 
-msgid "Turbo Mode"
-msgstr "渦輪爆衝模式"
-
 msgid "Tx-Power"
 msgstr "傳送-功率"
 
@@ -3286,6 +3370,9 @@ msgstr "UMTS/GPRS/EV-DO"
 
 msgid "USB Device"
 msgstr "USB設備"
+
+msgid "USB Ports"
+msgstr ""
 
 msgid "UUID"
 msgstr "設備通用唯一識別碼UUID"
@@ -3392,6 +3479,11 @@ msgstr "已使用"
 
 msgid "Used Key Slot"
 msgstr "已使用的關鍵插槽"
+
+msgid ""
+"Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
+"needed with normal WPA(2)-PSK."
+msgstr ""
 
 msgid "User certificate (PEM encoded)"
 msgstr ""
@@ -3545,9 +3637,6 @@ msgstr "寫入已接收的DNS請求到系統日誌中"
 msgid "Write system log to file"
 msgstr ""
 
-msgid "XR Support"
-msgstr "支援XR無線陣列"
-
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -3557,8 +3646,8 @@ msgstr ""
 "告: 假如你關閉必要的初始化腳本像\"網路\", 你的設備將可能無法存取!</strong>"
 
 msgid ""
-"You must enable Java Script in your browser or LuCI will not work properly."
-msgstr "在瀏覽器你必須啟用Java Script否則LuCI無法正常運作."
+"You must enable JavaScript in your browser or LuCI will not work properly."
+msgstr "在瀏覽器你必須啟用JavaScript否則LuCI無法正常運作."
 
 msgid ""
 "Your Internet Explorer is too old to display this page correctly. Please "
@@ -3571,9 +3660,6 @@ msgstr "任意"
 
 msgid "auto"
 msgstr "自動"
-
-msgid "automatic"
-msgstr ""
 
 msgid "baseT"
 msgstr "baseT"
@@ -3648,7 +3734,7 @@ msgstr "本地<abbr title=\"Domain Name System\">DNS</abbr> 檔案"
 msgid "minimum 1280, maximum 1480"
 msgstr ""
 
-msgid "navigation Navigation"
+msgid "minutes"
 msgstr ""
 
 msgid "no"
@@ -3684,12 +3770,6 @@ msgstr "路由"
 msgid "server mode"
 msgstr ""
 
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
-msgstr ""
-
 msgid "stateful-only"
 msgstr ""
 
@@ -3701,6 +3781,9 @@ msgstr ""
 
 msgid "tagged"
 msgstr "標籤"
+
+msgid "time units (TUs / 1.024 ms) [1000-65535]"
+msgstr ""
 
 msgid "unknown"
 msgstr "未知"
@@ -3722,6 +3805,57 @@ msgstr "是的"
 
 msgid "« Back"
 msgstr "« 倒退"
+
+#~ msgid "Leasetime"
+#~ msgstr "租賃時間"
+
+#~ msgid "AR Support"
+#~ msgstr "AR支援"
+
+#~ msgid "Atheros 802.11%s Wireless Controller"
+#~ msgstr "Atheros 802.11%s 無線控制器"
+
+#~ msgid "Background Scan"
+#~ msgstr "背景搜尋"
+
+#~ msgid "Compression"
+#~ msgstr "壓縮"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "關閉硬體燈號計時器"
+
+#~ msgid "Do not send probe responses"
+#~ msgstr "不傳送探測回應"
+
+#~ msgid "Fast Frames"
+#~ msgstr "快速迅框群"
+
+#~ msgid "Maximum Rate"
+#~ msgstr "最快速度"
+
+#~ msgid "Minimum Rate"
+#~ msgstr "最低速度"
+
+#~ msgid "Multicast Rate"
+#~ msgstr "多點群播速度"
+
+#~ msgid "Outdoor Channels"
+#~ msgstr "室外通道"
+
+#~ msgid "Regulatory Domain"
+#~ msgstr "監管網域"
+
+#~ msgid "Separate WDS"
+#~ msgstr "分隔WDS中繼"
+
+#~ msgid "Static WDS"
+#~ msgstr "靜態WDS"
+
+#~ msgid "Turbo Mode"
+#~ msgstr "渦輪爆衝模式"
+
+#~ msgid "XR Support"
+#~ msgstr "支援XR無線陣列"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "取消選取將會另外建立一個新網路，而不會覆蓋目前的網路設定"

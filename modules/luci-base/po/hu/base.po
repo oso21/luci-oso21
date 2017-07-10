@@ -50,11 +50,35 @@ msgstr "Terhelés (utolsó 1 perc):"
 msgid "15 Minute Load:"
 msgstr "Terhelés (utolsó 15 perc):"
 
+msgid "4-character hexadecimal ID"
+msgstr ""
+
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
 msgstr "Terhelés (utolsó 5 perc):"
+
+msgid "6-octet identifier as a hex string - no colons"
+msgstr ""
+
+msgid "802.11r Fast Transition"
+msgstr ""
+
+msgid "802.11w Association SA Query maximum timeout"
+msgstr ""
+
+msgid "802.11w Association SA Query retry timeout"
+msgstr ""
+
+msgid "802.11w Management Frame Protection"
+msgstr ""
+
+msgid "802.11w maximum timeout"
+msgstr ""
+
+msgid "802.11w retry timeout"
+msgstr ""
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -126,6 +150,11 @@ msgstr "<abbr title=\"maximal\">Max.</abbr> párhuzamos lekérdezés"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -143,9 +172,6 @@ msgstr ""
 
 msgid "APN"
 msgstr "APN"
-
-msgid "AR Support"
-msgstr "AR Támogatás"
 
 msgid "ARP retry threshold"
 msgstr "ARP újrapróbálkozási küszöbérték"
@@ -393,13 +419,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr "Kapcsolódó kliensek"
 
-msgid "Atheros 802.11%s Wireless Controller"
-msgstr "Atheros 802.11%s vezeték-nélküli vezérlő"
-
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -473,9 +493,6 @@ msgstr "Vissza az áttekintéshez"
 
 msgid "Back to scan results"
 msgstr "Vissza a felderítési eredményekhez"
-
-msgid "Background Scan"
-msgstr "Felderítés a háttérben"
 
 msgid "Backup / Flash Firmware"
 msgstr "Mentés / Firmware frissítés"
@@ -648,9 +665,6 @@ msgstr "Parancs"
 
 msgid "Common Configuration"
 msgstr "Álatános beállítás"
-
-msgid "Compression"
-msgstr "Tömörítés"
 
 msgid "Configuration"
 msgstr "Beállítás"
@@ -871,11 +885,11 @@ msgstr "DNS beállítás letiltása"
 msgid "Disable Encryption"
 msgstr ""
 
-msgid "Disable HW-Beacon timer"
-msgstr "Hardveres beacon időzítő letiltása"
-
 msgid "Disabled"
 msgstr "Letiltva"
+
+msgid "Disabled (default)"
+msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
 msgstr "Beérkező RFC1918 DHCP válaszok elvetése. "
@@ -916,9 +930,6 @@ msgstr ""
 
 msgid "Do not forward reverse lookups for local networks"
 msgstr "Ne továbbítson fordított keresési kéréseket a helyi hálózathoz"
-
-msgid "Do not send probe responses"
-msgstr "Ne válaszoljon a szondázásra"
 
 msgid "Domain required"
 msgstr "Tartomány szükséges"
@@ -1051,6 +1062,11 @@ msgstr "Engedélyezés/Letiltás"
 msgid "Enabled"
 msgstr "Engedélyezve"
 
+msgid ""
+"Enables fast roaming among access points that belong to the same Mobility "
+"Domain"
+msgstr ""
+
 msgid "Enables the Spanning Tree Protocol on this bridge"
 msgstr "A Spanning Tree prokoll engedélyezése erre a hídra"
 
@@ -1098,6 +1114,12 @@ msgstr "A bérelt címek lejárati ideje, a minimális érték 2 perc."
 msgid "External"
 msgstr ""
 
+msgid "External R0 Key Holder List"
+msgstr ""
+
+msgid "External R1 Key Holder List"
+msgstr ""
+
 msgid "External system log server"
 msgstr "Külső rendszernapló kiszolgáló"
 
@@ -1109,9 +1131,6 @@ msgstr ""
 
 msgid "Extra SSH command options"
 msgstr ""
-
-msgid "Fast Frames"
-msgstr "Gyors keretek"
 
 msgid "File"
 msgstr "Fájl"
@@ -1147,6 +1166,9 @@ msgstr "Befejezés"
 
 msgid "Firewall"
 msgstr "Tűzfal"
+
+msgid "Firewall Mark"
+msgstr ""
 
 msgid "Firewall Settings"
 msgstr "Tűzfal Beállítások"
@@ -1194,6 +1216,9 @@ msgstr "TKIP kényszerítése"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "TKIP és CCMP (AES) kényszerítése"
+
+msgid "Force link"
+msgstr ""
 
 msgid "Force use of NAT-T"
 msgstr ""
@@ -1349,6 +1374,9 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
+msgid "IP Addresses"
+msgstr ""
+
 msgid "IP address"
 msgstr "IP cím"
 
@@ -1439,8 +1467,14 @@ msgstr "IPv6 prefix hossz"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "IPv6-cím"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6 IPv4-ben (RFC4213)"
@@ -1545,6 +1579,9 @@ msgstr "Telepített csomagok"
 msgid "Interface"
 msgstr "Interfész"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "Interfész beállítások"
 
@@ -1593,6 +1630,9 @@ msgstr ""
 msgid "Invalid username and/or password! Please try again."
 msgstr "Érvénytelen felhasználói név és/vagy jelszó! Kérem próbálja újra!"
 
+msgid "Isolate Clients"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
@@ -1601,8 +1641,8 @@ msgstr ""
 "Úgy tűnik, hogy a flash-elendő kép-file nem fér el a Flash-memóriába. Kérem "
 "ellenőrizze a kép fájlt!"
 
-msgid "Java Script required!"
-msgstr "Javascript szükséges!"
+msgid "JavaScript required!"
+msgstr "JavaScript szükséges!"
 
 msgid "Join Network"
 msgstr "Csatlakozás a hálózathoz"
@@ -1670,9 +1710,6 @@ msgstr "Bérlet érvényességi ideje"
 msgid "Leasefile"
 msgstr "Bérlet fájl"
 
-msgid "Leasetime"
-msgstr "Bérlet időtartama"
-
 msgid "Leasetime remaining"
 msgstr "A bérletből hátralévő idő"
 
@@ -1715,6 +1752,22 @@ msgid ""
 msgstr ""
 "<abbr title=\"Domain Name System\">DNS</abbr> szerverek listája, ahová a "
 "kérések továbbításra kerülnek"
+
+msgid ""
+"List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
+"Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
+"(NAS Identifier) to a destination MAC address when requesting PMK-R1 key "
+"from the R0KH that the STA used during the Initial Mobility Domain "
+"Association."
+msgstr ""
+
+msgid ""
+"List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
+"as 6 octets with colons,128-bit key as hex string. <br />This list is used "
+"to map R1KH-ID to a destination MAC address when sending PMK-R1 key from the "
+"R0KH. This is also the list of authorized R1KHs in the MD that can request "
+"PMK-R1 keys."
+msgstr ""
 
 msgid "List of SSH key files for auth"
 msgstr ""
@@ -1858,9 +1911,6 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-msgid "Maximum Rate"
-msgstr "Maximális sebesség"
-
 msgid "Maximum allowed number of active DHCP leases"
 msgstr "Aktív DHCP bérletek maximális száma"
 
@@ -1896,9 +1946,6 @@ msgstr "Memória használat (%)"
 msgid "Metric"
 msgstr "Metrika"
 
-msgid "Minimum Rate"
-msgstr "Minimális sebesség"
-
 msgid "Minimum hold time"
 msgstr "Minimális tartási idő"
 
@@ -1910,6 +1957,9 @@ msgstr ""
 
 msgid "Missing protocol extension for proto %q"
 msgstr "Hiányzó protokoll kiterjesztés a %q progokoll számára"
+
+msgid "Mobility Domain"
+msgstr ""
 
 msgid "Mode"
 msgstr "Mód"
@@ -1969,9 +2019,6 @@ msgstr "Mozgatás lefelé"
 msgid "Move up"
 msgstr "Mozgatás felfelé"
 
-msgid "Multicast Rate"
-msgstr "Multicast sebesség"
-
 msgid "Multicast address"
 msgstr "Multicast cím"
 
@@ -1982,6 +2029,9 @@ msgid "NAT-T Mode"
 msgstr ""
 
 msgid "NAT64 Prefix"
+msgstr ""
+
+msgid "NCM"
 msgstr ""
 
 msgid "NDP-Proxy"
@@ -2163,18 +2213,30 @@ msgstr "Beállítás módosítva"
 msgid "Option removed"
 msgstr "Beállítás eltávolítva"
 
+msgid "Optional"
+msgstr ""
+
 msgid "Optional, specify to override default server (tic.sixxs.net)"
 msgstr ""
 
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
+msgid ""
+"Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
+"starting with <code>0x</code>."
 msgstr ""
 
 msgid ""
-"Optional. Adds in an additional layer of symmetric-key cryptography for post-"
-"quantum resistance."
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
+msgstr ""
+
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2210,9 +2272,6 @@ msgstr "Ki"
 
 msgid "Outbound:"
 msgstr "Kimenő:"
-
-msgid "Outdoor Channels"
-msgstr "Kültéri csatornák"
 
 msgid "Output Interface"
 msgstr ""
@@ -2262,6 +2321,9 @@ msgstr "PID"
 
 msgid "PIN"
 msgstr "PIN"
+
+msgid "PMK R1 Push"
+msgstr ""
 
 msgid "PPP"
 msgstr "PPP"
@@ -2392,6 +2454,15 @@ msgstr ""
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
+msgid "Prefer LTE"
+msgstr ""
+
+msgid "Prefer UMTS"
+msgstr ""
+
+msgid "Prefix Delegated"
+msgstr ""
+
 msgid "Preshared Key"
 msgstr ""
 
@@ -2458,6 +2529,12 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Minőség"
+
+msgid "R0 Key Lifetime"
+msgstr ""
+
+msgid "R1 Key Holder"
+msgstr ""
 
 msgid "RFC3947 NAT-T mode"
 msgstr ""
@@ -2553,6 +2630,9 @@ msgstr "Valósidejű forgalom"
 msgid "Realtime Wireless"
 msgstr "Valósidejű vezetéknélküli adatok"
 
+msgid "Reassociation Deadline"
+msgstr ""
+
 msgid "Rebind protection"
 msgstr "Rebind elleni védelem"
 
@@ -2571,6 +2651,9 @@ msgstr "Fogadás"
 msgid "Receiver Antenna"
 msgstr "Vevő antenna"
 
+msgid "Recommended. IP addresses of the WireGuard interface."
+msgstr ""
+
 msgid "Reconnect this interface"
 msgstr "Csatlakoztassa újra az interfészt"
 
@@ -2579,9 +2662,6 @@ msgstr "Interfész újracsatlakoztatása"
 
 msgid "References"
 msgstr "Hivatkozások"
-
-msgid "Regulatory Domain"
-msgstr "Szabályozó tartomány"
 
 msgid "Relay"
 msgstr "Átjátszás"
@@ -2622,11 +2702,17 @@ msgstr ""
 msgid "Require TLS"
 msgstr ""
 
+msgid "Required"
+msgstr ""
+
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 "Szükséges bizonyos internetszolgáltatók esetén, pl. Charter 'DOCSIS 3'-al"
 
 msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
 msgid ""
@@ -2635,7 +2721,9 @@ msgid ""
 "routes through the tunnel."
 msgstr ""
 
-msgid "Required. Public key of peer."
+msgid ""
+"Requires the 'full' version of wpad/hostapd and support from the wifi driver "
+"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -2779,9 +2867,6 @@ msgstr ""
 msgid "Separate Clients"
 msgstr "Kliensek szétválasztása"
 
-msgid "Separate WDS"
-msgstr "WDS szétválasztása"
-
 msgid "Server Settings"
 msgstr "Kiszolgáló beállításai"
 
@@ -2804,6 +2889,11 @@ msgstr "Szolgáltatás típusa"
 
 msgid "Services"
 msgstr "Szolgáltatások"
+
+msgid ""
+"Set interface properties regardless of the link carrier (If set, carrier "
+"sense events do not invoke hotplug handlers)."
+msgstr ""
 
 #, fuzzy
 msgid "Set up Time Synchronization"
@@ -2945,9 +3035,6 @@ msgstr "Statikus bérletek"
 
 msgid "Static Routes"
 msgstr "Statikus útvonalak"
-
-msgid "Static WDS"
-msgstr "Statikus WDS"
 
 msgid "Static address"
 msgstr "Statikus cím"
@@ -3375,9 +3462,6 @@ msgstr ""
 msgid "Tunnel type"
 msgstr ""
 
-msgid "Turbo Mode"
-msgstr "Turbó mód"
-
 msgid "Tx-Power"
 msgstr "Adóteljesítmény"
 
@@ -3395,6 +3479,9 @@ msgstr "UMTS/GPRS/EV-DO"
 
 msgid "USB Device"
 msgstr "USB eszköz"
+
+msgid "USB Ports"
+msgstr ""
 
 msgid "UUID"
 msgstr "UUID"
@@ -3503,6 +3590,11 @@ msgstr "Használt"
 
 msgid "Used Key Slot"
 msgstr "Használt kulcsindex"
+
+msgid ""
+"Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
+"needed with normal WPA(2)-PSK."
+msgstr ""
 
 msgid "User certificate (PEM encoded)"
 msgstr ""
@@ -3656,9 +3748,6 @@ msgstr "A kapott DNS kéréseket írja a rendszernaplóba"
 msgid "Write system log to file"
 msgstr ""
 
-msgid "XR Support"
-msgstr "XR támogatás"
-
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -3670,7 +3759,7 @@ msgstr ""
 "esetén, az eszköz elérhetetlenné válhat!</strong>"
 
 msgid ""
-"You must enable Java Script in your browser or LuCI will not work properly."
+"You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
 "Engélyezze a Java Szkripteket a böngészőjében, mert anélkül a LuCI nem fog "
 "megfelelően működni."
@@ -3686,9 +3775,6 @@ msgstr "bármelyik"
 
 msgid "auto"
 msgstr "automatikus"
-
-msgid "automatic"
-msgstr ""
 
 msgid "baseT"
 msgstr "baseT"
@@ -3763,7 +3849,7 @@ msgstr "helyi <abbr title=\"Domain Name System\">DNS</abbr> fájl"
 msgid "minimum 1280, maximum 1480"
 msgstr ""
 
-msgid "navigation Navigation"
+msgid "minutes"
 msgstr ""
 
 msgid "no"
@@ -3799,12 +3885,6 @@ msgstr "irányított"
 msgid "server mode"
 msgstr ""
 
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
-msgstr ""
-
 msgid "stateful-only"
 msgstr ""
 
@@ -3816,6 +3896,9 @@ msgstr ""
 
 msgid "tagged"
 msgstr "cimkézett"
+
+msgid "time units (TUs / 1.024 ms) [1000-65535]"
+msgstr ""
 
 msgid "unknown"
 msgstr "ismeretlen"
@@ -3837,6 +3920,57 @@ msgstr "igen"
 
 msgid "« Back"
 msgstr "« Vissza"
+
+#~ msgid "Leasetime"
+#~ msgstr "Bérlet időtartama"
+
+#~ msgid "AR Support"
+#~ msgstr "AR Támogatás"
+
+#~ msgid "Atheros 802.11%s Wireless Controller"
+#~ msgstr "Atheros 802.11%s vezeték-nélküli vezérlő"
+
+#~ msgid "Background Scan"
+#~ msgstr "Felderítés a háttérben"
+
+#~ msgid "Compression"
+#~ msgstr "Tömörítés"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "Hardveres beacon időzítő letiltása"
+
+#~ msgid "Do not send probe responses"
+#~ msgstr "Ne válaszoljon a szondázásra"
+
+#~ msgid "Fast Frames"
+#~ msgstr "Gyors keretek"
+
+#~ msgid "Maximum Rate"
+#~ msgstr "Maximális sebesség"
+
+#~ msgid "Minimum Rate"
+#~ msgstr "Minimális sebesség"
+
+#~ msgid "Multicast Rate"
+#~ msgstr "Multicast sebesség"
+
+#~ msgid "Outdoor Channels"
+#~ msgstr "Kültéri csatornák"
+
+#~ msgid "Regulatory Domain"
+#~ msgstr "Szabályozó tartomány"
+
+#~ msgid "Separate WDS"
+#~ msgstr "WDS szétválasztása"
+
+#~ msgid "Static WDS"
+#~ msgstr "Statikus WDS"
+
+#~ msgid "Turbo Mode"
+#~ msgstr "Turbó mód"
+
+#~ msgid "XR Support"
+#~ msgstr "XR támogatás"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "Amennyiben ezt jelöletlenül hagyja, egy további hálózat jön létre"

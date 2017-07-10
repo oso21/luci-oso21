@@ -52,11 +52,35 @@ msgstr "Charge sur 1 minute :"
 msgid "15 Minute Load:"
 msgstr "Charge sur 15 minutes :"
 
+msgid "4-character hexadecimal ID"
+msgstr ""
+
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
 msgstr "Charge sur 5 minutes :"
+
+msgid "6-octet identifier as a hex string - no colons"
+msgstr ""
+
+msgid "802.11r Fast Transition"
+msgstr ""
+
+msgid "802.11w Association SA Query maximum timeout"
+msgstr ""
+
+msgid "802.11w Association SA Query retry timeout"
+msgstr ""
+
+msgid "802.11w Management Frame Protection"
+msgstr ""
+
+msgid "802.11w maximum timeout"
+msgstr ""
+
+msgid "802.11w retry timeout"
+msgstr ""
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -129,6 +153,11 @@ msgstr "Maximum de requêtes concurrentes"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -146,9 +175,6 @@ msgstr ""
 
 msgid "APN"
 msgstr "APN"
-
-msgid "AR Support"
-msgstr "Gestion du mode AR"
 
 msgid "ARP retry threshold"
 msgstr "Niveau de ré-essai ARP"
@@ -400,13 +426,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr "Équipements associés"
 
-msgid "Atheros 802.11%s Wireless Controller"
-msgstr "Contrôleur sans fil Atheros 802.11%s "
-
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -480,9 +500,6 @@ msgstr "Retour à la vue générale"
 
 msgid "Back to scan results"
 msgstr "Retour aux résultats de la recherche"
-
-msgid "Background Scan"
-msgstr "Recherche en arrière-plan"
 
 msgid "Backup / Flash Firmware"
 msgstr "Sauvegarde / Mise à jour du micrologiciel"
@@ -653,9 +670,6 @@ msgstr "Commande"
 
 msgid "Common Configuration"
 msgstr "Configuration commune"
-
-msgid "Compression"
-msgstr "Compression"
 
 msgid "Configuration"
 msgstr "Configuration"
@@ -877,11 +891,11 @@ msgstr "Désactiver la configuration DNS"
 msgid "Disable Encryption"
 msgstr ""
 
-msgid "Disable HW-Beacon timer"
-msgstr "Désactiver l'émission périodique de balises wifi (« HW-Beacon »)"
-
 msgid "Disabled"
 msgstr "Désactivé"
+
+msgid "Disabled (default)"
+msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
 msgstr "Jeter les réponses en RFC1918 amont"
@@ -925,9 +939,6 @@ msgstr ""
 msgid "Do not forward reverse lookups for local networks"
 msgstr ""
 "Ne pas transmettre les requêtes de recherche inverse pour les réseaux locaux"
-
-msgid "Do not send probe responses"
-msgstr "Ne pas envoyer de réponses de test"
 
 msgid "Domain required"
 msgstr "Domaine nécessaire"
@@ -1058,6 +1069,11 @@ msgstr "Activer/Désactiver"
 msgid "Enabled"
 msgstr "Activé"
 
+msgid ""
+"Enables fast roaming among access points that belong to the same Mobility "
+"Domain"
+msgstr ""
+
 msgid "Enables the Spanning Tree Protocol on this bridge"
 msgstr ""
 "Activer le protocole <abbr title=\"Spanning Tree Protocol\">STP</abbr> sur "
@@ -1109,6 +1125,12 @@ msgstr ""
 msgid "External"
 msgstr ""
 
+msgid "External R0 Key Holder List"
+msgstr ""
+
+msgid "External R1 Key Holder List"
+msgstr ""
+
 msgid "External system log server"
 msgstr "Serveur distant de journaux système"
 
@@ -1120,9 +1142,6 @@ msgstr ""
 
 msgid "Extra SSH command options"
 msgstr ""
-
-msgid "Fast Frames"
-msgstr "Trames rapides"
 
 msgid "File"
 msgstr "Fichier"
@@ -1158,6 +1177,9 @@ msgstr "Terminer"
 
 msgid "Firewall"
 msgstr "Pare-feu"
+
+msgid "Firewall Mark"
+msgstr ""
 
 msgid "Firewall Settings"
 msgstr "Paramètres du pare-feu"
@@ -1203,6 +1225,9 @@ msgstr "Forcer TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Forcer TKIP et CCMP (AES)"
+
+msgid "Force link"
+msgstr ""
 
 msgid "Force use of NAT-T"
 msgstr ""
@@ -1360,6 +1385,9 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
+msgid "IP Addresses"
+msgstr ""
+
 msgid "IP address"
 msgstr "Adresse IP"
 
@@ -1450,8 +1478,14 @@ msgstr "longueur du préfixe IPv6"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "Adresse IPv6"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6 dans IPv4 (RFC 4213)"
@@ -1555,6 +1589,9 @@ msgstr "Paquets installés"
 msgid "Interface"
 msgstr "Interface"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "Configuration de l'interface"
 
@@ -1603,6 +1640,9 @@ msgstr ""
 msgid "Invalid username and/or password! Please try again."
 msgstr "Nom d'utilisateur et/ou mot de passe invalides ! Réessayez !"
 
+msgid "Isolate Clients"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
@@ -1612,7 +1652,7 @@ msgstr ""
 "tient pas dans sa mémoire flash, vérifiez s'il vous plait votre fichier-"
 "image !"
 
-msgid "Java Script required!"
+msgid "JavaScript required!"
 msgstr "Nécessite un Script Java !"
 
 msgid "Join Network"
@@ -1681,9 +1721,6 @@ msgstr "Durée de validité d'un bail"
 msgid "Leasefile"
 msgstr "Fichier de baux"
 
-msgid "Leasetime"
-msgstr "Durée du bail"
-
 msgid "Leasetime remaining"
 msgstr "Durée de validité"
 
@@ -1726,6 +1763,22 @@ msgid ""
 msgstr ""
 "Liste des serveurs auquels sont transmis les requêtes <abbr title=\"Domain "
 "Name System\">DNS</abbr>"
+
+msgid ""
+"List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
+"Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
+"(NAS Identifier) to a destination MAC address when requesting PMK-R1 key "
+"from the R0KH that the STA used during the Initial Mobility Domain "
+"Association."
+msgstr ""
+
+msgid ""
+"List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
+"as 6 octets with colons,128-bit key as hex string. <br />This list is used "
+"to map R1KH-ID to a destination MAC address when sending PMK-R1 key from the "
+"R0KH. This is also the list of authorized R1KHs in the MD that can request "
+"PMK-R1 keys."
+msgstr ""
 
 msgid "List of SSH key files for auth"
 msgstr ""
@@ -1869,9 +1922,6 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-msgid "Maximum Rate"
-msgstr "Débit maximum"
-
 msgid "Maximum allowed number of active DHCP leases"
 msgstr "Nombre maximum de baux DHCP actifs"
 
@@ -1907,9 +1957,6 @@ msgstr "Utilisation Mémoire (%)"
 msgid "Metric"
 msgstr "Metrique"
 
-msgid "Minimum Rate"
-msgstr "Débit minimum"
-
 msgid "Minimum hold time"
 msgstr "Temps de maintien mimimum"
 
@@ -1921,6 +1968,9 @@ msgstr ""
 
 msgid "Missing protocol extension for proto %q"
 msgstr "Extention de protocole manquante pour le proto %q"
+
+msgid "Mobility Domain"
+msgstr ""
 
 msgid "Mode"
 msgstr "Mode"
@@ -1980,9 +2030,6 @@ msgstr "Descendre"
 msgid "Move up"
 msgstr "Monter"
 
-msgid "Multicast Rate"
-msgstr "Débit multidiffusion"
-
 msgid "Multicast address"
 msgstr "Adresse multidiffusion"
 
@@ -1993,6 +2040,9 @@ msgid "NAT-T Mode"
 msgstr ""
 
 msgid "NAT64 Prefix"
+msgstr ""
+
+msgid "NCM"
 msgstr ""
 
 msgid "NDP-Proxy"
@@ -2173,18 +2223,30 @@ msgstr "Option modifiée"
 msgid "Option removed"
 msgstr "Option retirée"
 
+msgid "Optional"
+msgstr ""
+
 msgid "Optional, specify to override default server (tic.sixxs.net)"
 msgstr ""
 
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
+msgid ""
+"Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
+"starting with <code>0x</code>."
 msgstr ""
 
 msgid ""
-"Optional. Adds in an additional layer of symmetric-key cryptography for post-"
-"quantum resistance."
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
+msgstr ""
+
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2220,9 +2282,6 @@ msgstr "Sortie"
 
 msgid "Outbound:"
 msgstr "Extérieur :"
-
-msgid "Outdoor Channels"
-msgstr "Canaux en extérieur"
 
 msgid "Output Interface"
 msgstr ""
@@ -2272,6 +2331,9 @@ msgstr "PID"
 
 msgid "PIN"
 msgstr "code PIN"
+
+msgid "PMK R1 Push"
+msgstr ""
 
 msgid "PPP"
 msgstr "PPP"
@@ -2402,6 +2464,15 @@ msgstr ""
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
+msgid "Prefer LTE"
+msgstr ""
+
+msgid "Prefer UMTS"
+msgstr ""
+
+msgid "Prefix Delegated"
+msgstr ""
+
 msgid "Preshared Key"
 msgstr ""
 
@@ -2468,6 +2539,12 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Qualitée"
+
+msgid "R0 Key Lifetime"
+msgstr ""
+
+msgid "R1 Key Holder"
+msgstr ""
 
 msgid "RFC3947 NAT-T mode"
 msgstr ""
@@ -2562,6 +2639,9 @@ msgstr "Trafic temps-réel"
 msgid "Realtime Wireless"
 msgstr "Qualité de réception actuelle"
 
+msgid "Reassociation Deadline"
+msgstr ""
+
 msgid "Rebind protection"
 msgstr "Protection contre l'attaque « rebind »"
 
@@ -2580,6 +2660,9 @@ msgstr "Reçoit"
 msgid "Receiver Antenna"
 msgstr "Antenne émettrice"
 
+msgid "Recommended. IP addresses of the WireGuard interface."
+msgstr ""
+
 msgid "Reconnect this interface"
 msgstr "Reconnecter cet interface"
 
@@ -2588,9 +2671,6 @@ msgstr "Reconnecte cet interface"
 
 msgid "References"
 msgstr "Références"
-
-msgid "Regulatory Domain"
-msgstr "Domaine de certification"
 
 msgid "Relay"
 msgstr "Relais"
@@ -2631,10 +2711,16 @@ msgstr ""
 msgid "Require TLS"
 msgstr ""
 
+msgid "Required"
+msgstr ""
+
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr "Nécessaire avec certains FAIs, par ex. : Charter avec DOCSIS 3"
 
 msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
 msgid ""
@@ -2643,7 +2729,9 @@ msgid ""
 "routes through the tunnel."
 msgstr ""
 
-msgid "Required. Public key of peer."
+msgid ""
+"Requires the 'full' version of wpad/hostapd and support from the wifi driver "
+"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -2788,9 +2876,6 @@ msgstr ""
 msgid "Separate Clients"
 msgstr "Isoler les clients"
 
-msgid "Separate WDS"
-msgstr "WDS séparé"
-
 msgid "Server Settings"
 msgstr "Paramètres du serveur"
 
@@ -2813,6 +2898,11 @@ msgstr "Type du service"
 
 msgid "Services"
 msgstr "Services"
+
+msgid ""
+"Set interface properties regardless of the link carrier (If set, carrier "
+"sense events do not invoke hotplug handlers)."
+msgstr ""
 
 #, fuzzy
 msgid "Set up Time Synchronization"
@@ -2954,9 +3044,6 @@ msgstr "Baux Statiques"
 
 msgid "Static Routes"
 msgstr "Routes statiques"
-
-msgid "Static WDS"
-msgstr "WDS statique"
 
 msgid "Static address"
 msgstr "Adresse statique"
@@ -3387,9 +3474,6 @@ msgstr ""
 msgid "Tunnel type"
 msgstr ""
 
-msgid "Turbo Mode"
-msgstr "Mode Turbo"
-
 msgid "Tx-Power"
 msgstr "Puissance d'émission"
 
@@ -3407,6 +3491,9 @@ msgstr "UMTS/GPRS/EV-DO"
 
 msgid "USB Device"
 msgstr "Périphérique USB"
+
+msgid "USB Ports"
+msgstr ""
 
 msgid "UUID"
 msgstr "UUID"
@@ -3516,6 +3603,11 @@ msgstr "Utilisé"
 
 msgid "Used Key Slot"
 msgstr "Clé utilisée"
+
+msgid ""
+"Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
+"needed with normal WPA(2)-PSK."
+msgstr ""
 
 msgid "User certificate (PEM encoded)"
 msgstr ""
@@ -3669,9 +3761,6 @@ msgstr "Écrire les requêtes DNS reçues dans syslog"
 msgid "Write system log to file"
 msgstr ""
 
-msgid "XR Support"
-msgstr "Gestion du mode XR"
-
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -3683,10 +3772,10 @@ msgstr ""
 "\", votre équipement pourrait ne plus être accessible&#160;!</strong>"
 
 msgid ""
-"You must enable Java Script in your browser or LuCI will not work properly."
+"You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
-"Vous devez activer Java Script dans votre navigateur pour que LuCI "
-"fonctionne correctement."
+"Vous devez activer JavaScript dans votre navigateur pour que LuCI fonctionne "
+"correctement."
 
 msgid ""
 "Your Internet Explorer is too old to display this page correctly. Please "
@@ -3699,10 +3788,6 @@ msgstr "n'importe lequel"
 
 msgid "auto"
 msgstr "auto"
-
-#, fuzzy
-msgid "automatic"
-msgstr "statique"
 
 msgid "baseT"
 msgstr "baseT"
@@ -3775,7 +3860,7 @@ msgstr "fichier de résolution local"
 msgid "minimum 1280, maximum 1480"
 msgstr ""
 
-msgid "navigation Navigation"
+msgid "minutes"
 msgstr ""
 
 msgid "no"
@@ -3811,12 +3896,6 @@ msgstr "routé"
 msgid "server mode"
 msgstr ""
 
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
-msgstr ""
-
 msgid "stateful-only"
 msgstr ""
 
@@ -3828,6 +3907,9 @@ msgstr ""
 
 msgid "tagged"
 msgstr "marqué"
+
+msgid "time units (TUs / 1.024 ms) [1000-65535]"
+msgstr ""
 
 msgid "unknown"
 msgstr "inconnu"
@@ -3849,6 +3931,61 @@ msgstr "oui"
 
 msgid "« Back"
 msgstr "« Retour"
+
+#~ msgid "Leasetime"
+#~ msgstr "Durée du bail"
+
+#, fuzzy
+#~ msgid "automatic"
+#~ msgstr "statique"
+
+#~ msgid "AR Support"
+#~ msgstr "Gestion du mode AR"
+
+#~ msgid "Atheros 802.11%s Wireless Controller"
+#~ msgstr "Contrôleur sans fil Atheros 802.11%s "
+
+#~ msgid "Background Scan"
+#~ msgstr "Recherche en arrière-plan"
+
+#~ msgid "Compression"
+#~ msgstr "Compression"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "Désactiver l'émission périodique de balises wifi (« HW-Beacon »)"
+
+#~ msgid "Do not send probe responses"
+#~ msgstr "Ne pas envoyer de réponses de test"
+
+#~ msgid "Fast Frames"
+#~ msgstr "Trames rapides"
+
+#~ msgid "Maximum Rate"
+#~ msgstr "Débit maximum"
+
+#~ msgid "Minimum Rate"
+#~ msgstr "Débit minimum"
+
+#~ msgid "Multicast Rate"
+#~ msgstr "Débit multidiffusion"
+
+#~ msgid "Outdoor Channels"
+#~ msgstr "Canaux en extérieur"
+
+#~ msgid "Regulatory Domain"
+#~ msgstr "Domaine de certification"
+
+#~ msgid "Separate WDS"
+#~ msgstr "WDS séparé"
+
+#~ msgid "Static WDS"
+#~ msgstr "WDS statique"
+
+#~ msgid "Turbo Mode"
+#~ msgstr "Mode Turbo"
+
+#~ msgid "XR Support"
+#~ msgstr "Gestion du mode XR"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "Un réseau supplémentaire sera créé si vous laissé ceci décoché."

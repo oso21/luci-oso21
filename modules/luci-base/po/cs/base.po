@@ -50,11 +50,35 @@ msgstr "Zatížení za 1 minutu:"
 msgid "15 Minute Load:"
 msgstr "Zatížení za 15 minut:"
 
+msgid "4-character hexadecimal ID"
+msgstr ""
+
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
 msgstr "Zatížení za 5 minut:"
+
+msgid "6-octet identifier as a hex string - no colons"
+msgstr ""
+
+msgid "802.11r Fast Transition"
+msgstr ""
+
+msgid "802.11w Association SA Query maximum timeout"
+msgstr ""
+
+msgid "802.11w Association SA Query retry timeout"
+msgstr ""
+
+msgid "802.11w Management Frame Protection"
+msgstr ""
+
+msgid "802.11w maximum timeout"
+msgstr ""
+
+msgid "802.11w retry timeout"
+msgstr ""
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -125,6 +149,11 @@ msgstr "Nejvyšší počet souběžných dotazů"
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -142,9 +171,6 @@ msgstr ""
 
 msgid "APN"
 msgstr "APN"
-
-msgid "AR Support"
-msgstr "Podpora AR"
 
 msgid "ARP retry threshold"
 msgstr "ARP limit opakování"
@@ -390,13 +416,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr "Připojení klienti"
 
-msgid "Atheros 802.11%s Wireless Controller"
-msgstr "Atheros 802.11%s bezdrátový ovladač"
-
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -470,9 +490,6 @@ msgstr "Zpět k přehledu"
 
 msgid "Back to scan results"
 msgstr "Zpět k výsledkům vyhledávání"
-
-msgid "Background Scan"
-msgstr "Vyhledávat na pozadí"
 
 msgid "Backup / Flash Firmware"
 msgstr "Zálohovat / nahrát firmware"
@@ -641,9 +658,6 @@ msgstr "Příkaz"
 
 msgid "Common Configuration"
 msgstr "Společná nastavení"
-
-msgid "Compression"
-msgstr "Komprese"
 
 msgid "Configuration"
 msgstr "Nastavení"
@@ -864,11 +878,11 @@ msgstr "Zakázat nastavení DNS"
 msgid "Disable Encryption"
 msgstr ""
 
-msgid "Disable HW-Beacon timer"
-msgstr "Zakázat HW-Beacon časovač"
-
 msgid "Disabled"
 msgstr "Zakázáno"
+
+msgid "Disabled (default)"
+msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
 msgstr "Vyřadit upstream RFC1918 odpovědi"
@@ -909,9 +923,6 @@ msgstr ""
 
 msgid "Do not forward reverse lookups for local networks"
 msgstr "Nepřeposílat reverzní dotazy na místní sítě"
-
-msgid "Do not send probe responses"
-msgstr "Neodpovídat na vyhledávání"
 
 msgid "Domain required"
 msgstr "Vyžadována doména"
@@ -1042,6 +1053,11 @@ msgstr "Povolit/Zakázat"
 msgid "Enabled"
 msgstr "Povoleno"
 
+msgid ""
+"Enables fast roaming among access points that belong to the same Mobility "
+"Domain"
+msgstr ""
+
 msgid "Enables the Spanning Tree Protocol on this bridge"
 msgstr "Na tomto síťovém mostě povolit Spanning Tree Protocol"
 
@@ -1090,6 +1106,12 @@ msgstr ""
 msgid "External"
 msgstr ""
 
+msgid "External R0 Key Holder List"
+msgstr ""
+
+msgid "External R1 Key Holder List"
+msgstr ""
+
 msgid "External system log server"
 msgstr "Externí protokolovací server"
 
@@ -1101,9 +1123,6 @@ msgstr ""
 
 msgid "Extra SSH command options"
 msgstr ""
-
-msgid "Fast Frames"
-msgstr "Rychlé rámce"
 
 msgid "File"
 msgstr "Soubor"
@@ -1139,6 +1158,9 @@ msgstr "Dokončit"
 
 msgid "Firewall"
 msgstr "Firewall"
+
+msgid "Firewall Mark"
+msgstr ""
 
 msgid "Firewall Settings"
 msgstr "Nastavení firewallu"
@@ -1184,6 +1206,9 @@ msgstr "Vynutit TKIP"
 
 msgid "Force TKIP and CCMP (AES)"
 msgstr "Vynutit TKIP a CCMP (AES)"
+
+msgid "Force link"
+msgstr ""
 
 msgid "Force use of NAT-T"
 msgstr ""
@@ -1339,6 +1364,9 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
+msgid "IP Addresses"
+msgstr ""
+
 msgid "IP address"
 msgstr "IP adresy"
 
@@ -1429,8 +1457,14 @@ msgstr "Délka IPv6 prefixu"
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
 msgstr "IPv6 adresa"
+
+msgid "IPv6-PD"
+msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr "IPv6-in-IPv4 (RFC4213)"
@@ -1532,6 +1566,9 @@ msgstr "Nainstalované balíčky"
 msgid "Interface"
 msgstr "Rozhraní"
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr "Konfigurace rozhraní"
 
@@ -1579,6 +1616,9 @@ msgstr "Uvedené VLAN ID je neplatné! Každé ID musí být jedinečné"
 msgid "Invalid username and/or password! Please try again."
 msgstr "Špatné uživatelské jméno a/nebo heslo! Prosím zkuste to znovu."
 
+msgid "Isolate Clients"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
@@ -1587,7 +1627,7 @@ msgstr ""
 "Zdá se, že se pokoušíte zapsat obraz, který se nevejde do flash paměti. "
 "Prosím ověřte soubor s obrazem!"
 
-msgid "Java Script required!"
+msgid "JavaScript required!"
 msgstr "Vyžadován JavaScript!"
 
 msgid "Join Network"
@@ -1656,9 +1696,6 @@ msgstr "Doba platnosti zápůjčky"
 msgid "Leasefile"
 msgstr "Soubor zájpůjček"
 
-msgid "Leasetime"
-msgstr "Doba trvání zápůjčky"
-
 msgid "Leasetime remaining"
 msgstr "Zbývající doba trvání zápůjčky"
 
@@ -1701,6 +1738,22 @@ msgid ""
 msgstr ""
 "Seznam <abbr title=\"Domain Name System\">DNS</abbr> serverů, na které "
 "přeposílat požadavky"
+
+msgid ""
+"List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
+"Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
+"(NAS Identifier) to a destination MAC address when requesting PMK-R1 key "
+"from the R0KH that the STA used during the Initial Mobility Domain "
+"Association."
+msgstr ""
+
+msgid ""
+"List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
+"as 6 octets with colons,128-bit key as hex string. <br />This list is used "
+"to map R1KH-ID to a destination MAC address when sending PMK-R1 key from the "
+"R0KH. This is also the list of authorized R1KHs in the MD that can request "
+"PMK-R1 keys."
+msgstr ""
 
 msgid "List of SSH key files for auth"
 msgstr ""
@@ -1841,9 +1894,6 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-msgid "Maximum Rate"
-msgstr "Nejvyšší míra"
-
 msgid "Maximum allowed number of active DHCP leases"
 msgstr "Nejvyšší povolené množství aktivních DHCP zápůjček"
 
@@ -1879,9 +1929,6 @@ msgstr "Využití paměti (%)"
 msgid "Metric"
 msgstr "Metrika"
 
-msgid "Minimum Rate"
-msgstr "Nejnižší hodnota"
-
 msgid "Minimum hold time"
 msgstr "Minimální čas zápůjčky"
 
@@ -1893,6 +1940,9 @@ msgstr ""
 
 msgid "Missing protocol extension for proto %q"
 msgstr "Chybějící rozšíření protokolu %q"
+
+msgid "Mobility Domain"
+msgstr ""
 
 msgid "Mode"
 msgstr "Mód"
@@ -1952,9 +2002,6 @@ msgstr "Přesunout dolů"
 msgid "Move up"
 msgstr "Přesunout nahoru"
 
-msgid "Multicast Rate"
-msgstr "Hodnota vícesměrového vysílání"
-
 msgid "Multicast address"
 msgstr "Adresa vícesměrového vysílání"
 
@@ -1965,6 +2012,9 @@ msgid "NAT-T Mode"
 msgstr ""
 
 msgid "NAT64 Prefix"
+msgstr ""
+
+msgid "NCM"
 msgstr ""
 
 msgid "NDP-Proxy"
@@ -2146,18 +2196,30 @@ msgstr "Volba změněna"
 msgid "Option removed"
 msgstr "Volba odstraněna"
 
+msgid "Optional"
+msgstr ""
+
 msgid "Optional, specify to override default server (tic.sixxs.net)"
 msgstr ""
 
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
+msgid ""
+"Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
+"starting with <code>0x</code>."
 msgstr ""
 
 msgid ""
-"Optional. Adds in an additional layer of symmetric-key cryptography for post-"
-"quantum resistance."
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
+msgstr ""
+
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2193,9 +2255,6 @@ msgstr "Ven"
 
 msgid "Outbound:"
 msgstr "Odchozí:"
-
-msgid "Outdoor Channels"
-msgstr "Venkovní kanály"
 
 msgid "Output Interface"
 msgstr ""
@@ -2245,6 +2304,9 @@ msgstr "PID"
 
 msgid "PIN"
 msgstr "PIN"
+
+msgid "PMK R1 Push"
+msgstr ""
 
 msgid "PPP"
 msgstr "PPP"
@@ -2375,6 +2437,15 @@ msgstr ""
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
+msgid "Prefer LTE"
+msgstr ""
+
+msgid "Prefer UMTS"
+msgstr ""
+
+msgid "Prefix Delegated"
+msgstr ""
+
 msgid "Preshared Key"
 msgstr ""
 
@@ -2441,6 +2512,12 @@ msgstr ""
 
 msgid "Quality"
 msgstr "Kvalita"
+
+msgid "R0 Key Lifetime"
+msgstr ""
+
+msgid "R1 Key Holder"
+msgstr ""
 
 msgid "RFC3947 NAT-T mode"
 msgstr ""
@@ -2536,6 +2613,9 @@ msgstr "Provoz v reálném čase"
 msgid "Realtime Wireless"
 msgstr "Wireless v reálném čase"
 
+msgid "Reassociation Deadline"
+msgstr ""
+
 msgid "Rebind protection"
 msgstr "Opětovné nastavení ochrany"
 
@@ -2554,6 +2634,9 @@ msgstr "Přijmout"
 msgid "Receiver Antenna"
 msgstr "Přijímací anténa"
 
+msgid "Recommended. IP addresses of the WireGuard interface."
+msgstr ""
+
 msgid "Reconnect this interface"
 msgstr "Přepojit toto rozhraní"
 
@@ -2562,9 +2645,6 @@ msgstr "Přepojuji rozhraní"
 
 msgid "References"
 msgstr "Reference"
-
-msgid "Regulatory Domain"
-msgstr "Doména regulátora"
 
 msgid "Relay"
 msgstr "Přenos"
@@ -2605,11 +2685,17 @@ msgstr ""
 msgid "Require TLS"
 msgstr ""
 
+msgid "Required"
+msgstr ""
+
 # Charter je poskytovate
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr "Vyžadováno u některých ISP, např. Charter s DocSIS 3"
 
 msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
 msgid ""
@@ -2618,7 +2704,9 @@ msgid ""
 "routes through the tunnel."
 msgstr ""
 
-msgid "Required. Public key of peer."
+msgid ""
+"Requires the 'full' version of wpad/hostapd and support from the wifi driver "
+"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -2761,9 +2849,6 @@ msgstr ""
 msgid "Separate Clients"
 msgstr "Oddělovat klienty"
 
-msgid "Separate WDS"
-msgstr "Oddělovat WDS"
-
 msgid "Server Settings"
 msgstr "Nastavení serveru"
 
@@ -2786,6 +2871,11 @@ msgstr "Typ služby"
 
 msgid "Services"
 msgstr "Služby"
+
+msgid ""
+"Set interface properties regardless of the link carrier (If set, carrier "
+"sense events do not invoke hotplug handlers)."
+msgstr ""
 
 #, fuzzy
 msgid "Set up Time Synchronization"
@@ -2926,9 +3016,6 @@ msgstr "Statické zápůjčky"
 
 msgid "Static Routes"
 msgstr "Statické trasy"
-
-msgid "Static WDS"
-msgstr "Statický WDS"
 
 msgid "Static address"
 msgstr "Statická adresa"
@@ -3344,9 +3431,6 @@ msgstr ""
 msgid "Tunnel type"
 msgstr ""
 
-msgid "Turbo Mode"
-msgstr "Turbo mód"
-
 msgid "Tx-Power"
 msgstr "Tx-Power"
 
@@ -3364,6 +3448,9 @@ msgstr "UMTS/GPRS/EV-DO"
 
 msgid "USB Device"
 msgstr "USB zařízení"
+
+msgid "USB Ports"
+msgstr ""
 
 msgid "UUID"
 msgstr "UUID"
@@ -3470,6 +3557,11 @@ msgid "Used"
 msgstr "Použit"
 
 msgid "Used Key Slot"
+msgstr ""
+
+msgid ""
+"Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
+"needed with normal WPA(2)-PSK."
 msgstr ""
 
 msgid "User certificate (PEM encoded)"
@@ -3624,9 +3716,6 @@ msgstr "Zapisovat přijaté požadavky DNS do systemového logu"
 msgid "Write system log to file"
 msgstr ""
 
-msgid "XR Support"
-msgstr "Podpora XR"
-
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -3637,9 +3726,9 @@ msgstr ""
 "\"network\", vaše zařízení se může stát nepřístupným!</strong>"
 
 msgid ""
-"You must enable Java Script in your browser or LuCI will not work properly."
+"You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
-"Aby LuCI fungoval správně, musíte mít v prohlížeči povolený Javascript."
+"Aby LuCI fungoval správně, musíte mít v prohlížeči povolený JavaScript."
 
 msgid ""
 "Your Internet Explorer is too old to display this page correctly. Please "
@@ -3652,9 +3741,6 @@ msgstr "libovolný"
 
 msgid "auto"
 msgstr "auto"
-
-msgid "automatic"
-msgstr ""
 
 msgid "baseT"
 msgstr "baseT"
@@ -3729,7 +3815,7 @@ msgstr "místní <abbr title=\"Domain Name System\">DNS</abbr> soubor"
 msgid "minimum 1280, maximum 1480"
 msgstr ""
 
-msgid "navigation Navigation"
+msgid "minutes"
 msgstr ""
 
 msgid "no"
@@ -3765,12 +3851,6 @@ msgstr "směrované"
 msgid "server mode"
 msgstr ""
 
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
-msgstr ""
-
 msgid "stateful-only"
 msgstr ""
 
@@ -3782,6 +3862,9 @@ msgstr ""
 
 msgid "tagged"
 msgstr "označený"
+
+msgid "time units (TUs / 1.024 ms) [1000-65535]"
+msgstr ""
 
 msgid "unknown"
 msgstr "neznámý"
@@ -3803,6 +3886,57 @@ msgstr "ano"
 
 msgid "« Back"
 msgstr "« Zpět"
+
+#~ msgid "Leasetime"
+#~ msgstr "Doba trvání zápůjčky"
+
+#~ msgid "AR Support"
+#~ msgstr "Podpora AR"
+
+#~ msgid "Atheros 802.11%s Wireless Controller"
+#~ msgstr "Atheros 802.11%s bezdrátový ovladač"
+
+#~ msgid "Background Scan"
+#~ msgstr "Vyhledávat na pozadí"
+
+#~ msgid "Compression"
+#~ msgstr "Komprese"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "Zakázat HW-Beacon časovač"
+
+#~ msgid "Do not send probe responses"
+#~ msgstr "Neodpovídat na vyhledávání"
+
+#~ msgid "Fast Frames"
+#~ msgstr "Rychlé rámce"
+
+#~ msgid "Maximum Rate"
+#~ msgstr "Nejvyšší míra"
+
+#~ msgid "Minimum Rate"
+#~ msgstr "Nejnižší hodnota"
+
+#~ msgid "Multicast Rate"
+#~ msgstr "Hodnota vícesměrového vysílání"
+
+#~ msgid "Outdoor Channels"
+#~ msgstr "Venkovní kanály"
+
+#~ msgid "Regulatory Domain"
+#~ msgstr "Doména regulátora"
+
+#~ msgid "Separate WDS"
+#~ msgstr "Oddělovat WDS"
+
+#~ msgid "Static WDS"
+#~ msgstr "Statický WDS"
+
+#~ msgid "Turbo Mode"
+#~ msgstr "Turbo mód"
+
+#~ msgid "XR Support"
+#~ msgstr "Podpora XR"
 
 #~ msgid "An additional network will be created if you leave this unchecked."
 #~ msgstr "Pokud není zaškrtnuto, bude vytvořena dodatečná síť."

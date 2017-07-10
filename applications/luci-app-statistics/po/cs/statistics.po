@@ -35,6 +35,9 @@ msgstr "Základní adresář"
 msgid "Basic monitoring"
 msgstr "Základní sledování"
 
+msgid "CPU Context Switches Plugin Configuration"
+msgstr ""
+
 msgid "CPU Frequency"
 msgstr ""
 
@@ -85,6 +88,9 @@ msgstr "Conntrack"
 
 msgid "Conntrack Plugin Configuration"
 msgstr "Nastavení pluginu Conntrack"
+
+msgid "Context Switches"
+msgstr ""
 
 msgid "DF Plugin Configuration"
 msgstr "Nastavení pluginu DF"
@@ -325,6 +331,11 @@ msgstr "Síťové pluginy"
 
 msgid "Network protocol"
 msgstr "Síťový protokol"
+
+msgid ""
+"Note: as pages are rendered by user 'nobody', the *.rrd files, the storage "
+"directory and all its parent directories need to be world readable."
+msgstr ""
 
 msgid "Number of threads for data collection"
 msgstr "Počet vláken pro sběr dat"
@@ -675,6 +686,9 @@ msgid "Thermal"
 msgstr ""
 
 msgid "Thermal Plugin Configuration"
+msgstr ""
+
+msgid "This plugin collects statistics about the processor context switches."
 msgstr ""
 
 msgid "This plugin collects statistics about the processor frequency scaling."

@@ -38,6 +38,9 @@ msgstr ""
 msgid "Basic monitoring"
 msgstr ""
 
+msgid "CPU Context Switches Plugin Configuration"
+msgstr ""
+
 msgid "CPU Frequency"
 msgstr ""
 
@@ -84,6 +87,9 @@ msgid "Conntrack"
 msgstr ""
 
 msgid "Conntrack Plugin Configuration"
+msgstr ""
+
+msgid "Context Switches"
 msgstr ""
 
 msgid "DF Plugin Configuration"
@@ -319,6 +325,11 @@ msgstr ""
 
 msgid "Network protocol"
 msgstr "Мережевий протокол"
+
+msgid ""
+"Note: as pages are rendered by user 'nobody', the *.rrd files, the storage "
+"directory and all its parent directories need to be world readable."
+msgstr ""
 
 msgid "Number of threads for data collection"
 msgstr ""
@@ -631,6 +642,9 @@ msgid "Thermal"
 msgstr ""
 
 msgid "Thermal Plugin Configuration"
+msgstr ""
+
+msgid "This plugin collects statistics about the processor context switches."
 msgstr ""
 
 msgid "This plugin collects statistics about the processor frequency scaling."

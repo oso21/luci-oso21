@@ -37,10 +37,8 @@
 		local wan = ntm:get_wannet()
 		local wan6 = ntm:get_wan6net()
 
-		local conn_count = tonumber((
-			luci.sys.exec("wc -l /proc/net/nf_conntrack") or
-			luci.sys.exec("wc -l /proc/net/ip_conntrack") or
-			""):match("%d+")) or 0
+		local conn_count = tonumber(
+			fs.readfile("/proc/sys/net/netfilter/nf_conntrack_count")) or 0
 
 		local conn_max = tonumber((
 			luci.sys.exec("sysctl net.nf_conntrack_max") or
@@ -77,12 +75,14 @@
 
 		if wan6 then
 			rv.wan6 = {
-				ip6addr = wan6:ip6addr(),
-				gw6addr = wan6:gw6addr(),
-				dns     = wan6:dns6addrs(),
-				uptime  = wan6:uptime(),
-				ifname  = wan6:ifname(),
-				link    = wan6:adminlink()
+				ip6addr   = wan6:ip6addr(),
+				gw6addr   = wan6:gw6addr(),
+				dns       = wan6:dns6addrs(),
+				ip6prefix = wan6:ip6prefix(),
+				uptime    = wan6:uptime(),
+				proto     = wan6:proto(),
+				ifname    = wan6:ifname(),
+				link      = wan6:adminlink()
 			}
 		end
 
@@ -234,9 +234,34 @@
 			if (ifc6 && ifc6.ifname && ifc6.proto != 'none')
 			{
 				var s = String.format(
-					'<strong><%:Address%>: </strong>%s<br />' +
+					'<strong><%:Type%>: </strong>%s%s<br />',
+						ifc6.proto, (ifc6.ip6prefix) ? '-pd' : ''
+				);
+				
+				if (!ifc6.ip6prefix)
+				{
+					s += String.format(
+						'<strong><%:Address%>: </strong>%s<br />',
+						(ifc6.ip6addr) ? ifc6.ip6addr : '::'
+					);
+				}
+				else
+				{
+					s += String.format(
+						'<strong><%:Prefix Delegated%>: </strong>%s<br />',
+						ifc6.ip6prefix
+					);
+					if (ifc6.ip6addr)
+					{
+						s += String.format(
+							'<strong><%:Address%>: </strong>%s<br />',
+							ifc6.ip6addr
+						);
+					}
+				}
+
+				s += String.format(
 					'<strong><%:Gateway%>: </strong>%s<br />',
-						(ifc6.ip6addr) ? ifc6.ip6addr : '::',
 						(ifc6.gw6addr) ? ifc6.gw6addr : '::'
 				);
 

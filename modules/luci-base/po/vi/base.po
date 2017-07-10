@@ -52,10 +52,34 @@ msgstr ""
 msgid "15 Minute Load:"
 msgstr ""
 
+msgid "4-character hexadecimal ID"
+msgstr ""
+
 msgid "464XLAT (CLAT)"
 msgstr ""
 
 msgid "5 Minute Load:"
+msgstr ""
+
+msgid "6-octet identifier as a hex string - no colons"
+msgstr ""
+
+msgid "802.11r Fast Transition"
+msgstr ""
+
+msgid "802.11w Association SA Query maximum timeout"
+msgstr ""
+
+msgid "802.11w Association SA Query retry timeout"
+msgstr ""
+
+msgid "802.11w Management Frame Protection"
+msgstr ""
+
+msgid "802.11w maximum timeout"
+msgstr ""
+
+msgid "802.11w retry timeout"
 msgstr ""
 
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
@@ -122,6 +146,11 @@ msgstr ""
 msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr ""
 
+msgid ""
+"<br/>Note: you need to manually restart the cron service if the crontab file "
+"was empty before editing."
+msgstr ""
+
 msgid "A43C + J43 + A43"
 msgstr ""
 
@@ -139,9 +168,6 @@ msgstr ""
 
 msgid "APN"
 msgstr ""
-
-msgid "AR Support"
-msgstr "Hỗ trợ AR"
 
 msgid "ARP retry threshold"
 msgstr ""
@@ -378,13 +404,7 @@ msgstr ""
 msgid "Associated Stations"
 msgstr ""
 
-msgid "Atheros 802.11%s Wireless Controller"
-msgstr ""
-
 msgid "Auth Group"
-msgstr ""
-
-msgid "AuthGroup"
 msgstr ""
 
 msgid "Authentication"
@@ -458,9 +478,6 @@ msgstr ""
 
 msgid "Back to scan results"
 msgstr ""
-
-msgid "Background Scan"
-msgstr "Background Scan"
 
 msgid "Backup / Flash Firmware"
 msgstr ""
@@ -615,9 +632,6 @@ msgstr "Lệnh"
 
 msgid "Common Configuration"
 msgstr ""
-
-msgid "Compression"
-msgstr "Sức nén"
 
 msgid "Configuration"
 msgstr "Cấu hình"
@@ -834,10 +848,10 @@ msgstr ""
 msgid "Disable Encryption"
 msgstr ""
 
-msgid "Disable HW-Beacon timer"
-msgstr "Vô hiệu hóa bộ chỉnh giờ HW-Beacon"
-
 msgid "Disabled"
+msgstr ""
+
+msgid "Disabled (default)"
 msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
@@ -877,9 +891,6 @@ msgstr ""
 
 msgid "Do not forward reverse lookups for local networks"
 msgstr ""
-
-msgid "Do not send probe responses"
-msgstr "Không gửi nhắc hồi đáp"
 
 msgid "Domain required"
 msgstr "Domain yêu cầu"
@@ -1008,6 +1019,11 @@ msgstr "Cho kích hoạt/ Vô hiệu hóa"
 msgid "Enabled"
 msgstr ""
 
+msgid ""
+"Enables fast roaming among access points that belong to the same Mobility "
+"Domain"
+msgstr ""
+
 msgid "Enables the Spanning Tree Protocol on this bridge"
 msgstr "Kích hoạt Spanning Tree Protocol trên cầu nối này"
 
@@ -1054,6 +1070,12 @@ msgstr ""
 msgid "External"
 msgstr ""
 
+msgid "External R0 Key Holder List"
+msgstr ""
+
+msgid "External R1 Key Holder List"
+msgstr ""
+
 msgid "External system log server"
 msgstr ""
 
@@ -1065,9 +1087,6 @@ msgstr ""
 
 msgid "Extra SSH command options"
 msgstr ""
-
-msgid "Fast Frames"
-msgstr "Khung nhanh"
 
 msgid "File"
 msgstr ""
@@ -1103,6 +1122,9 @@ msgstr ""
 
 msgid "Firewall"
 msgstr "Firewall"
+
+msgid "Firewall Mark"
+msgstr ""
 
 msgid "Firewall Settings"
 msgstr ""
@@ -1147,6 +1169,9 @@ msgid "Force TKIP"
 msgstr ""
 
 msgid "Force TKIP and CCMP (AES)"
+msgstr ""
+
+msgid "Force link"
 msgstr ""
 
 msgid "Force use of NAT-T"
@@ -1301,6 +1326,9 @@ msgstr ""
 msgid "IKE DH Group"
 msgstr ""
 
+msgid "IP Addresses"
+msgstr ""
+
 msgid "IP address"
 msgstr "Địa chỉ IP"
 
@@ -1391,7 +1419,13 @@ msgstr ""
 msgid "IPv6 routed prefix"
 msgstr ""
 
+msgid "IPv6 suffix"
+msgstr ""
+
 msgid "IPv6-Address"
+msgstr ""
+
+msgid "IPv6-PD"
 msgstr ""
 
 msgid "IPv6-in-IPv4 (RFC4213)"
@@ -1493,6 +1527,9 @@ msgstr ""
 msgid "Interface"
 msgstr "Giao diện "
 
+msgid "Interface %q device auto-migrated from %q to %q."
+msgstr ""
+
 msgid "Interface Configuration"
 msgstr ""
 
@@ -1538,6 +1575,9 @@ msgstr ""
 msgid "Invalid username and/or password! Please try again."
 msgstr "Tên và mật mã không đúng. Xin thử lại "
 
+msgid "Isolate Clients"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It appears that you are trying to flash an image that does not fit into the "
@@ -1546,7 +1586,7 @@ msgstr ""
 "Dường như bạn cố gắng flash một hình ảnh không phù hợp với bộ nhớ flash, xin "
 "vui lòng xác minh các tập tin hình ảnh!"
 
-msgid "Java Script required!"
+msgid "JavaScript required!"
 msgstr ""
 
 msgid "Join Network"
@@ -1615,9 +1655,6 @@ msgstr ""
 msgid "Leasefile"
 msgstr "Leasefile"
 
-msgid "Leasetime"
-msgstr "Leasetime"
-
 msgid "Leasetime remaining"
 msgstr "Leasetime còn lại"
 
@@ -1657,6 +1694,22 @@ msgstr "Link On"
 msgid ""
 "List of <abbr title=\"Domain Name System\">DNS</abbr> servers to forward "
 "requests to"
+msgstr ""
+
+msgid ""
+"List of R0KHs in the same Mobility Domain. <br />Format: MAC-address,NAS-"
+"Identifier,128-bit key as hex string. <br />This list is used to map R0KH-ID "
+"(NAS Identifier) to a destination MAC address when requesting PMK-R1 key "
+"from the R0KH that the STA used during the Initial Mobility Domain "
+"Association."
+msgstr ""
+
+msgid ""
+"List of R1KHs in the same Mobility Domain. <br />Format: MAC-address,R1KH-ID "
+"as 6 octets with colons,128-bit key as hex string. <br />This list is used "
+"to map R1KH-ID to a destination MAC address when sending PMK-R1 key from the "
+"R0KH. This is also the list of authorized R1KHs in the MD that can request "
+"PMK-R1 keys."
 msgstr ""
 
 msgid "List of SSH key files for auth"
@@ -1791,9 +1844,6 @@ msgstr ""
 msgid "Max. Attainable Data Rate (ATTNDR)"
 msgstr ""
 
-msgid "Maximum Rate"
-msgstr "Mức cao nhất"
-
 msgid "Maximum allowed number of active DHCP leases"
 msgstr ""
 
@@ -1829,9 +1879,6 @@ msgstr "Memory usage (%)"
 msgid "Metric"
 msgstr "Metric"
 
-msgid "Minimum Rate"
-msgstr "Mức thấp nhất"
-
 msgid "Minimum hold time"
 msgstr "Mức thấp nhất"
 
@@ -1842,6 +1889,9 @@ msgid "Mirror source port"
 msgstr ""
 
 msgid "Missing protocol extension for proto %q"
+msgstr ""
+
+msgid "Mobility Domain"
 msgstr ""
 
 msgid "Mode"
@@ -1902,9 +1952,6 @@ msgstr ""
 msgid "Move up"
 msgstr ""
 
-msgid "Multicast Rate"
-msgstr "Multicast Rate"
-
 msgid "Multicast address"
 msgstr ""
 
@@ -1915,6 +1962,9 @@ msgid "NAT-T Mode"
 msgstr ""
 
 msgid "NAT64 Prefix"
+msgstr ""
+
+msgid "NCM"
 msgstr ""
 
 msgid "NDP-Proxy"
@@ -2097,18 +2147,30 @@ msgstr ""
 msgid "Option removed"
 msgstr ""
 
+msgid "Optional"
+msgstr ""
+
 msgid "Optional, specify to override default server (tic.sixxs.net)"
 msgstr ""
 
 msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
-msgid "Optional."
+msgid ""
+"Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
+"starting with <code>0x</code>."
 msgstr ""
 
 msgid ""
-"Optional. Adds in an additional layer of symmetric-key cryptography for post-"
-"quantum resistance."
+"Optional. Allowed values: 'eui64', 'random', fixed value like '::1' or "
+"'::1:2'. When IPv6 prefix (like 'a:b:c:d::') is received from a delegating "
+"server, use the suffix (like '::1') to form the IPv6 address ('a:b:c:d::1') "
+"for the interface."
+msgstr ""
+
+msgid ""
+"Optional. Base64-encoded preshared key. Adds in an additional layer of "
+"symmetric-key cryptography for post-quantum resistance."
 msgstr ""
 
 msgid "Optional. Create routes for Allowed IPs for this peer."
@@ -2144,9 +2206,6 @@ msgstr "Ra khỏi"
 
 msgid "Outbound:"
 msgstr ""
-
-msgid "Outdoor Channels"
-msgstr "Kênh ngoại mạng"
 
 msgid "Output Interface"
 msgstr ""
@@ -2193,6 +2252,9 @@ msgid "PID"
 msgstr "PID"
 
 msgid "PIN"
+msgstr ""
+
+msgid "PMK R1 Push"
 msgstr ""
 
 msgid "PPP"
@@ -2324,6 +2386,15 @@ msgstr ""
 msgid "Pre-emtive CRC errors (CRCP_P)"
 msgstr ""
 
+msgid "Prefer LTE"
+msgstr ""
+
+msgid "Prefer UMTS"
+msgstr ""
+
+msgid "Prefix Delegated"
+msgstr ""
+
 msgid "Preshared Key"
 msgstr ""
 
@@ -2387,6 +2458,12 @@ msgid "QMI Cellular"
 msgstr ""
 
 msgid "Quality"
+msgstr ""
+
+msgid "R0 Key Lifetime"
+msgstr ""
+
+msgid "R1 Key Holder"
 msgstr ""
 
 msgid "RFC3947 NAT-T mode"
@@ -2470,6 +2547,9 @@ msgstr ""
 msgid "Realtime Wireless"
 msgstr ""
 
+msgid "Reassociation Deadline"
+msgstr ""
+
 msgid "Rebind protection"
 msgstr ""
 
@@ -2488,6 +2568,9 @@ msgstr "Receive"
 msgid "Receiver Antenna"
 msgstr "Máy thu Antenna"
 
+msgid "Recommended. IP addresses of the WireGuard interface."
+msgstr ""
+
 msgid "Reconnect this interface"
 msgstr ""
 
@@ -2496,9 +2579,6 @@ msgstr ""
 
 msgid "References"
 msgstr "Tham chiếu"
-
-msgid "Regulatory Domain"
-msgstr "Miền điều chỉnh"
 
 msgid "Relay"
 msgstr ""
@@ -2539,10 +2619,16 @@ msgstr ""
 msgid "Require TLS"
 msgstr ""
 
+msgid "Required"
+msgstr ""
+
 msgid "Required for certain ISPs, e.g. Charter with DOCSIS 3"
 msgstr ""
 
 msgid "Required. Base64-encoded private key for this interface."
+msgstr ""
+
+msgid "Required. Base64-encoded public key of peer."
 msgstr ""
 
 msgid ""
@@ -2551,7 +2637,9 @@ msgid ""
 "routes through the tunnel."
 msgstr ""
 
-msgid "Required. Public key of peer."
+msgid ""
+"Requires the 'full' version of wpad/hostapd and support from the wifi driver "
+"<br />(as of Feb 2017: ath9k and ath10k, in LEDE also mwlwifi and mt76)"
 msgstr ""
 
 msgid ""
@@ -2693,9 +2781,6 @@ msgstr ""
 msgid "Separate Clients"
 msgstr "Cô lập đối tượng"
 
-msgid "Separate WDS"
-msgstr "Phân tách WDS"
-
 msgid "Server Settings"
 msgstr ""
 
@@ -2718,6 +2803,11 @@ msgstr ""
 
 msgid "Services"
 msgstr "Dịch vụ "
+
+msgid ""
+"Set interface properties regardless of the link carrier (If set, carrier "
+"sense events do not invoke hotplug handlers)."
+msgstr ""
 
 msgid "Set up Time Synchronization"
 msgstr ""
@@ -2852,9 +2942,6 @@ msgstr "Thống kê leases"
 
 msgid "Static Routes"
 msgstr "Static Routes"
-
-msgid "Static WDS"
-msgstr ""
 
 msgid "Static address"
 msgstr ""
@@ -3234,9 +3321,6 @@ msgstr ""
 msgid "Tunnel type"
 msgstr ""
 
-msgid "Turbo Mode"
-msgstr "Turbo Mode"
-
 msgid "Tx-Power"
 msgstr ""
 
@@ -3253,6 +3337,9 @@ msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
 msgid "USB Device"
+msgstr ""
+
+msgid "USB Ports"
 msgstr ""
 
 msgid "UUID"
@@ -3354,6 +3441,11 @@ msgid "Used"
 msgstr "Đã sử dụng"
 
 msgid "Used Key Slot"
+msgstr ""
+
+msgid ""
+"Used for two different purposes: RADIUS NAS ID and 802.11r R0KH-ID. Not "
+"needed with normal WPA(2)-PSK."
 msgstr ""
 
 msgid "User certificate (PEM encoded)"
@@ -3506,9 +3598,6 @@ msgstr ""
 msgid "Write system log to file"
 msgstr ""
 
-msgid "XR Support"
-msgstr "Hỗ trợ XR"
-
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
@@ -3520,7 +3609,7 @@ msgstr ""
 "bạn chó thể trở nên không truy cập được</strong>"
 
 msgid ""
-"You must enable Java Script in your browser or LuCI will not work properly."
+"You must enable JavaScript in your browser or LuCI will not work properly."
 msgstr ""
 
 msgid ""
@@ -3534,10 +3623,6 @@ msgstr ""
 
 msgid "auto"
 msgstr "tự động"
-
-#, fuzzy
-msgid "automatic"
-msgstr "thống kê"
 
 msgid "baseT"
 msgstr ""
@@ -3612,7 +3697,7 @@ msgstr "Tập tin <abbr title=\"Domain Name System\">DNS</abbr> địa phương"
 msgid "minimum 1280, maximum 1480"
 msgstr ""
 
-msgid "navigation Navigation"
+msgid "minutes"
 msgstr ""
 
 msgid "no"
@@ -3648,12 +3733,6 @@ msgstr ""
 msgid "server mode"
 msgstr ""
 
-msgid "skiplink1 Skip to navigation"
-msgstr ""
-
-msgid "skiplink2 Skip to content"
-msgstr ""
-
 msgid "stateful-only"
 msgstr ""
 
@@ -3664,6 +3743,9 @@ msgid "stateless + stateful"
 msgstr ""
 
 msgid "tagged"
+msgstr ""
+
+msgid "time units (TUs / 1.024 ms) [1000-65535]"
 msgstr ""
 
 msgid "unknown"
@@ -3686,3 +3768,52 @@ msgstr ""
 
 msgid "« Back"
 msgstr ""
+
+#~ msgid "Leasetime"
+#~ msgstr "Leasetime"
+
+#, fuzzy
+#~ msgid "automatic"
+#~ msgstr "thống kê"
+
+#~ msgid "AR Support"
+#~ msgstr "Hỗ trợ AR"
+
+#~ msgid "Background Scan"
+#~ msgstr "Background Scan"
+
+#~ msgid "Compression"
+#~ msgstr "Sức nén"
+
+#~ msgid "Disable HW-Beacon timer"
+#~ msgstr "Vô hiệu hóa bộ chỉnh giờ HW-Beacon"
+
+#~ msgid "Do not send probe responses"
+#~ msgstr "Không gửi nhắc hồi đáp"
+
+#~ msgid "Fast Frames"
+#~ msgstr "Khung nhanh"
+
+#~ msgid "Maximum Rate"
+#~ msgstr "Mức cao nhất"
+
+#~ msgid "Minimum Rate"
+#~ msgstr "Mức thấp nhất"
+
+#~ msgid "Multicast Rate"
+#~ msgstr "Multicast Rate"
+
+#~ msgid "Outdoor Channels"
+#~ msgstr "Kênh ngoại mạng"
+
+#~ msgid "Regulatory Domain"
+#~ msgstr "Miền điều chỉnh"
+
+#~ msgid "Separate WDS"
+#~ msgstr "Phân tách WDS"
+
+#~ msgid "Turbo Mode"
+#~ msgstr "Turbo Mode"
+
+#~ msgid "XR Support"
+#~ msgstr "Hỗ trợ XR"
