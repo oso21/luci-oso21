@@ -2319,6 +2319,9 @@ msgstr ""
 msgid "Password successfully changed!"
 msgstr "密碼已變更成功!"
 
+msgid "Password2"
+msgstr ""
+
 msgid "Path to CA-Certificate"
 msgstr "CA-證書的路徑"
 
@@ -3010,7 +3013,7 @@ msgid "Switch VLAN"
 msgstr ""
 
 msgid "Switch protocol"
-msgstr "交換器協定"
+msgstr "切換協定"
 
 msgid "Sync with browser"
 msgstr "同步瀏覽器"

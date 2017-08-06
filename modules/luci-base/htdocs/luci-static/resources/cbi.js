@@ -481,8 +481,9 @@ function cbi_d_check(deps) {
 				istat = (istat && cbi_d_checkvalue(j, deps[i][j]))
 			}
 		}
-		if (istat) {
-			return !reverse;
+
+		if (istat ^ reverse) {
+			return true;
 		}
 	}
 	return def;
@@ -648,9 +649,6 @@ function cbi_combobox(id, values, def, man, focus) {
 	var dt = obj.getAttribute('cbi_datatype');
 	var op = obj.getAttribute('cbi_optional');
 
-	if (dt)
-		cbi_validate_field(sel, op == 'true', dt);
-
 	if (!values[obj.value]) {
 		if (obj.value == "") {
 			var optdef = document.createElement("option");
@@ -684,6 +682,9 @@ function cbi_combobox(id, values, def, man, focus) {
 	sel.appendChild(optman);
 
 	obj.style.display = "none";
+
+	if (dt)
+		cbi_validate_field(sel, op == 'true', dt);
 
 	cbi_bind(sel, "change", function() {
 		if (sel.selectedIndex == sel.options.length - 1) {
@@ -727,7 +728,7 @@ function cbi_filebrowser(id, defpath) {
 	browser.focus();
 }
 
-function cbi_browser_init(id, defpath)
+function cbi_browser_init(id, resource, defpath)
 {
 	function cbi_browser_btnclick(e) {
 		cbi_filebrowser(id, defpath);
@@ -738,7 +739,7 @@ function cbi_browser_init(id, defpath)
 
 	var btn = document.createElement('img');
 	btn.className = 'cbi-image-button';
-	btn.src = cbi_strings.path.resource + '/cbi/folder.gif';
+	btn.src = (resource || cbi_strings.path.resource) + '/cbi/folder.gif';
 	field.parentNode.insertBefore(btn, field.nextSibling);
 
 	cbi_bind(btn, 'click', cbi_browser_btnclick);
@@ -805,7 +806,7 @@ function cbi_dynlist_init(parent, datatype, optional, choices)
 			parent.appendChild(b);
 			if (datatype == 'file')
 			{
-				cbi_browser_init(t.id, parent.getAttribute('data-browser-path'));
+				cbi_browser_init(t.id, null, parent.getAttribute('data-browser-path'));
 			}
 
 			parent.appendChild(document.createElement('br'));
