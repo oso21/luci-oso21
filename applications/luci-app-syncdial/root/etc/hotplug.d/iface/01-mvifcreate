@@ -1,6 +1,4 @@
 #!/bin/sh
-[ "$ACTION" = "ifdown" ] && pppconnectcheck &
-
 [ "$(uci get syncdial.config.enabled)" = "1" ] && \
 	[ "$(uci get syncdial.config.old_frame)" = "1" ] && \
 	[ "$DEVICE" = "$(uci get network.wan.ifname)" ] && \
