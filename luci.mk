@@ -40,12 +40,9 @@ LUCI_LANG.zh-cn=简体中文 (Simplified Chinese)
 LUCI_LANG.zh-tw=繁體中文 (Traditional Chinese)
 
 # Submenu titles
-LUCI_MENU.col=1. Collections
-LUCI_MENU.mod=2. Modules
+
 LUCI_MENU.app=3. Applications
-LUCI_MENU.theme=4. Themes
-LUCI_MENU.proto=5. Protocols
-LUCI_MENU.lib=6. Libraries
+
 
 
 PKG_NAME?=$(LUCI_NAME)
