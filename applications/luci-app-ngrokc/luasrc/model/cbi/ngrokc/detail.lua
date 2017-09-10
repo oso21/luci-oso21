@@ -60,13 +60,15 @@ custom_domain:depends("type", "https")
 
 dname=tunnels:option(Value, "dname", translate("Custom Domain") .. "/" .. translate("SubDomain"), translate("Please set your domain's CNAME or A record to the tunnel server."))
 dname.datatype = "hostname"
-dname.rmempty = false
+--dname.rmempty = false
+dname.rmempty = true
 dname:depends("type", "http")
 dname:depends("type", "https")
 
 rport=tunnels:option(Value, "rport", translate("Remote Port"))
 rport.datatype = "port"
-rport.rmempty = false
+--rport.rmempty = false
+rport.rmempty = true
 rport:depends("type", "tcp")
 
 custom_html=tunnels:option(DummyValue, "none")

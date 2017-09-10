@@ -8,7 +8,10 @@ include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=n2n_v2 VPN Configuration module
 LUCI_DEPENDS:=+n2n_v2
+LUCI_PKGARCH:=all
+PKG_VERSION:=1.0
+PKG_RELEASE:=1
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature

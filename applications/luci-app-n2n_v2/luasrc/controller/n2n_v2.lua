@@ -9,8 +9,10 @@ function index()
 	if not nixio.fs.access("/etc/config/n2n_v2") then
 		return
 	end
+	
+	entry({"admin", "vpn"}, firstchild(), "VPN", 45).dependent = false
 
 	local page
-	page = entry({"admin", "services", "n2n_v2"}, cbi("n2n_v2"), _("N2N VPN(V2)"), 45)
+	page = entry({"admin", "vpn", "n2n_v2"}, cbi("n2n_v2"), _("N2N v2 VPN"), 45)
 	page.dependent = true
 end
