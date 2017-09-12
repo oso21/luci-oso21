@@ -21,7 +21,6 @@ define Package/luci-app-aliddns/postinst
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	chmod 755 /etc/init.d/aliddns >/dev/null 2>&1
 	chmod 755 /usr/sbin/aliddns >/dev/null 2>&1
-	/etc/init.d/aliddns enable >/dev/null 2>&1
 fi
 exit 0
 endef
