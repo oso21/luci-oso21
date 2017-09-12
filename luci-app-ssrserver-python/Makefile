@@ -16,6 +16,8 @@ include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 
+define Package/luci-app-ssrserver-python/postinst
+#!/bin/sh
 if [ -z "$${IPKG_INSTROOT}" ]; then
 	chmod 755 /etc/init.d/ssr_server >/dev/null 2>&1
 fi
