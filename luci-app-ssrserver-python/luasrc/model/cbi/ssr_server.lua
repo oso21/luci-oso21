@@ -81,8 +81,8 @@ e.rmempty=true
 
 
 
---e=t:option(Value,"redirect",translate("redirect"))
---e.rmempty=true
+e=t:option(Value,"redirect",translate("redirect"))
+e.rmempty=true
 
 --e=t:option(Value,"timeout",translate("Connection Timeout"))
 --e.datatype="uinteger"
