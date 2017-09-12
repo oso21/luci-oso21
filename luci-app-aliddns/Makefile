@@ -19,7 +19,6 @@ define Package/luci-app-aliddns/postinst
 #!/bin/sh
 	chmod 755 /etc/init.d/aliddns >/dev/null 2>&1
 	chmod 755 /usr/sbin/aliddns >/dev/null 2>&1
-
 endef
 
 $(eval $(call BuildPackage,luci-app-aliddns))
