@@ -15,5 +15,13 @@ PKG_RELEASE:=1
 include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
+define Package/luci-app-aliddns/postinst
+#!/bin/sh
 
+if [ -z "$${IPKG_INSTROOT}" ]; then
+	chmod 755 /etc/init.d/aliddns >/dev/null 2>&1
+	/etc/init.d/aliddns enable >/dev/null 2>&1
+fi
+exit 0
+endef
 
