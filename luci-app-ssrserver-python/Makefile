@@ -16,13 +16,3 @@ include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
 
-define Package/luci-ssrserver-python/postinst
-#!/bin/sh
-[ -n "${IPKG_INSTROOT}" ] || {
-( . /etc/uci-defaults/luci-ssrserver-python ) && rm -f /etc/uci-defaults/luci-ssrserver-python
-	chmod 755 /etc/init.d/ssr_server >/dev/null 2>&1
-exit 0
-}
-endef
-
-$(eval $(call BuildPackage,luci-app-ssrserver-python))
