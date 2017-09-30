@@ -1,1 +1,1 @@
-Forked from coolsnowwolf for personel use,thanks !!
+luci-oso21
