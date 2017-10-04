@@ -53,6 +53,17 @@ start()
   local protocol_param=`uci get shadowsocksr.@shadowsocksr[0].protocol_param 2>/dev/null`
   local cron_mode=`uci get shadowsocksr.@shadowsocksr[0].cron_mode 2>/dev/null`
   local vt_gfwlist=`__gfwlist_by_mode $vt_proxy_mode`
+  ######automatically switch on tcp_fast_open
+  local testfto=$(sysctl -p | grep "net.ipv4.tcp_fastopen = 3")
+       if [ "$testfto" = "" ]
+       then
+         echo  fastopen  not support
+        local if_fast_open=false
+        else
+        local if_fast_open=true
+        fi
+       #echo $if_fast_open
+  
 
 	[ -f /etc/init.d/pdnsd ] && /etc/init.d/pdnsd disable 2>/dev/null
 
@@ -93,7 +104,7 @@ start()
     "protocol_param": "$protocol_param",
     "obfs": "$vt_obfs",
     "obfs_param": "$obfs_param",
-    "fast_open": false
+    "fast_open": $if_fast_open
 }
 EOF
 	/usr/bin/ssr-redir -u -c $SSRCONF -f $SS_REDIR_PIDFILE || return 1
