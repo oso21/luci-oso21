@@ -50,6 +50,7 @@ start()
   local vt_safe_dns_tcp=`uci get shadowsocksr.@shadowsocksr[0].safe_dns_tcp 2>/dev/null`
   local vt_proxy_mode=`uci get shadowsocksr.@shadowsocksr[0].proxy_mode`
   local obfs_param=`uci get shadowsocksr.@shadowsocksr[0].obfs_param 2>/dev/null`
+  local protocal_param=`uci get shadowsocksr.@shadowsocksr[0].protocol_param 2>/dev/null`
   local cron_mode=`uci get shadowsocksr.@shadowsocksr[0].cron_mode 2>/dev/null`
   local vt_gfwlist=`__gfwlist_by_mode $vt_proxy_mode`
 
@@ -89,7 +90,7 @@ start()
     "local_port": $SS_REDIR_PORT,
     "timeout": $vt_timeout,
     "protocol": "$vt_protocol",
-    "protocol_param": "",
+    "protocol_param": "$protocol_param",
     "obfs": "$vt_obfs",
     "obfs_param": "$obfs_param",
     "fast_open": false
