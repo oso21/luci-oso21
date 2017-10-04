@@ -123,6 +123,22 @@ protocol:value("auth_chain_b")
 protocol:value("auth_chain_c")
 protocol:value("auth_chain_d")
 
+proto_param = s:taboption("main",Flag, "proto_param", translate("Protocal plug-in parameters"),
+	translate("Incorrect use of this parameter will cause IP to be blocked. Please use it with care"))
+proto_param:depends("protocol", "auth_aes128_md5")
+proto_param:depends("protocol", "auth_aes128_sha1")
+proto_param:depends("protocol", "auth_chain_a")
+proto_param:depends("protocol", "auth_chain_b")
+proto_param:depends("protocol", "auth_chain_c")
+proto_param:depends("protocol", "auth_chain_d")
+
+protocol_param = s:taboption("main",Value, "protocol_param", translate("Protocal parameters"))
+protocol_param.rmempty = true
+protocol_param.datatype = "host"
+protocol_param:depends("proto_param", "1")
+
+
+
 obfs = s:taboption("main",ListValue, "obfs", translate("Obfs Param"))
 obfs:value("plain")
 obfs:value("http_simple")
